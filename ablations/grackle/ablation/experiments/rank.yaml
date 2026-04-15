@@ -1,0 +1,10 @@
+experiment: rank
+description: "Effect of ranking depth for mastering on portfolio quality"
+knob: rank
+fly_key: rank
+reference_value: 1
+values:
+  - 1
+  - 2
+  - 3
+wall_time_override: null

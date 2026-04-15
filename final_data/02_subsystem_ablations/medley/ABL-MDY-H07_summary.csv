@@ -1,0 +1,4 @@
+experiment,variant_idx,value,total,avg_par2,solved,solved_pct,vs_csbs_pct,vs_vbs_pct
+ABL-MDY-H07,0,binary,9000,23.025,7472,83.0,+13.1,+73.2
+ABL-MDY-H07,1,bump,9000,23.045,7471,83.0,+13.2,+73.3
+ABL-MDY-H07,2,exp,9000,23.025,7472,83.0,+13.1,+73.2

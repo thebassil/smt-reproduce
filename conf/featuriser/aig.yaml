@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.graph_aig.AIGFeaturiser
+output_type: GRAPH

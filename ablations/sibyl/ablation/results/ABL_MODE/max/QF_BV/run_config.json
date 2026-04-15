@@ -1,0 +1,58 @@
+{
+  "algorithmic": {
+    "epochs": 5,
+    "time_steps": 1,
+    "dropout": 0.1,
+    "pool_type": "max",
+    "edge_sets": [
+      "AST",
+      "Back-AST",
+      "Data"
+    ],
+    "mode": "max",
+    "no_jump": true,
+    "data_weight": "best"
+  },
+  "hardware": {
+    "partition": "gecko,falcon",
+    "gres": "gpu:1",
+    "cpus_per_task": 6,
+    "mem": null,
+    "time": "04:00:00"
+  },
+  "convention": {
+    "par_n": 2,
+    "scoring": "PAR-2",
+    "timeout_s": 60
+  },
+  "architecture": {
+    "_comment": "Hardcoded in GAT constructor \u2014 NOT ablated",
+    "numAttentionLayers": 5,
+    "inputLayerSize": 67,
+    "k": 20,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "ModifiedMarginRankingLoss(margin=0.1)",
+    "scheduler": "ReduceLROnPlateau(patience=3)"
+  },
+  "data": {
+    "labels_qf_bv": "/dcs/23/u5573765/cs351/smt-small-sbs-sibyl/sibyl_results/labels_QF_BV_filtered.json",
+    "labels_qf_lia": "/dcs/23/u5573765/cs351/smt-small-sbs-sibyl/sibyl_results/labels_QF_LIA_filtered.json",
+    "portfolio_qf_bv": "/dcs/23/u5573765/cs351/smt-small-sbs-sibyl/sibyl_results/portfolio_QF_BV.txt",
+    "portfolio_qf_lia": "/dcs/23/u5573765/cs351/smt-small-sbs-sibyl/sibyl_results/portfolio_QF_LIA.txt",
+    "benchmark_dir": "/dcs/23/u5573765/cs351/smt-small-sbs-sibyl/sibyl_results/benchmarks",
+    "logics": [
+      "QF_BV",
+      "QF_LIA"
+    ]
+  },
+  "paths": {
+    "sibyl_root": "/dcs/23/u5573765/cs351/smt-small-sbs-sibyl",
+    "trainer": "/dcs/23/u5573765/cs351/smt-small-sbs-sibyl/artifacts/sibyl/src/networks/smtTrainer.py",
+    "inference": "/dcs/23/u5573765/cs351/smt-small-sbs-sibyl/artifacts/sibyl/src/networks/inference.py",
+    "env_script": "/dcs/large/u5573765/env.sh"
+  },
+  "experiment_code": "ABL_MODE",
+  "knob": "mode",
+  "value": "max"
+}

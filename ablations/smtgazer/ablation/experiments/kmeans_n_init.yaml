@@ -1,0 +1,4 @@
+experiment_base: kmeans_n_init
+ablation_knob: kmeans_n_init
+reference_value: 10
+values: [1, 5, 10, 20, 50]

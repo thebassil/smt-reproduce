@@ -1,0 +1,3 @@
+_target_: pipeline.models.survival.SurvivalCard
+n_estimators: 100
+method: rsf

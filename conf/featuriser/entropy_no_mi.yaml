@@ -1,0 +1,6 @@
+defaults:
+  - entropy
+
+_target_: pipeline.featurisers.entropy_features.EntropyFeatures
+output_type: VECTOR
+include_mi: false

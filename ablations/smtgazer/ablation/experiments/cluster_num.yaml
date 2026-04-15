@@ -1,0 +1,4 @@
+experiment_base: cluster_num
+ablation_knob: cluster_num
+reference_value: 10
+values: [2, 5, 10, 15, 20, 30]

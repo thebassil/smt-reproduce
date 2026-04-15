@@ -1,0 +1,2 @@
+experiment_code,knob,value,logic,k,total_instances,vbs_par2,vbs_solved,vbs_solved_pct,sbs_par2,sbs_solved,sbs_solved_pct,sibyl_par2,sibyl_solved,sibyl_solved_pct,vbs_matches,total_wall_seconds,timestamp_utc,sibyl_vs_sbs_pct,closeness_to_vbs_pct
+ABL_DATA_WEIGHT,data_weight,none,QF_BV,5,2944,49166.395999999986,2593,88.0774456521739,71378.58599999985,2397,81.41983695652173,60078.541999999965,2495,84.74864130434783,1242,26027.699999999997,2026-03-19T19:33:23.427725+00:00,15.831140168565275,50.87316469019919

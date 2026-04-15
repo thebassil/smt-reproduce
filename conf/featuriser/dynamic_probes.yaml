@@ -1,0 +1,4 @@
+_target_: pipeline.featurisers.dynamic_probes.DynamicProbesFeaturiser
+output_type: VECTOR
+timeout_s: 1.0
+solver_cmd: z3

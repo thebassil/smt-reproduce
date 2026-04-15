@@ -1,0 +1,6 @@
+defaults:
+  - wl_kernel
+
+_target_: pipeline.featurisers.wl_kernel.WLKernel
+output_type: VECTOR
+wl_depth: 1

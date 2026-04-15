@@ -1,0 +1,69 @@
+[Thu  5 Mar 01:29:59 GMT 2026] Sibyl ablation: ABL_POOL_TYPE | pool_type=add | QF_BV
+SLURM_JOB_ID=1260805
+Node: gecko-03
+GPU: NVIDIA A10
+SMT environment loaded from /dcs/large/u5573765
+======================================================================
+Sibyl Ablation Runner
+  Experiment: ABL_POOL_TYPE
+  Knob:       pool_type = add
+  Logic:      QF_BV
+  Output:     /dcs/23/u5573765/cs351/smt-ablation-sibyl/ablation/results/ABL_POOL_TYPE/add/QF_BV
+======================================================================
+
+  Logic: QF_BV
+  Benchmarks: 245
+  Configs: ['z3_bv_default', 'z3_bv_eager', 'cvc5_bv_default', 'cvc5_bv_eager']
+  K-folds: 5
+
+  --- Fold 1/5: train=196, val=49 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Training error: imizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, device=device, task='rank', k=1, trainWeights=trainWeights, valWeights=valWeights)
+  File "/dcs/large/u5573765/artifacts/sibyl/src/networks/utils/utils.py", line 159, in train_model
+    assert corr <=1, str(corr) + " " + str(scores) + " " + str(labels)
+AssertionError: nan tensor([[nan, nan, nan, nan]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<NegBackward0>) tensor([[ 4.9720,  5.0910, 20.0280, 21.0920]], device='cuda:0')
+
+    Training FAILED — skipping fold
+
+  --- Fold 2/5: train=196, val=49 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Training error: imizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, device=device, task='rank', k=1, trainWeights=trainWeights, valWeights=valWeights)
+  File "/dcs/large/u5573765/artifacts/sibyl/src/networks/utils/utils.py", line 159, in train_model
+    assert corr <=1, str(corr) + " " + str(scores) + " " + str(labels)
+AssertionError: nan tensor([[nan, nan, nan, nan]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<NegBackward0>) tensor([[ 5.5670,  7.3780, 60.0000, 60.0000]], device='cuda:0')
+
+    Training FAILED — skipping fold
+
+  --- Fold 3/5: train=196, val=49 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Training error: imizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, device=device, task='rank', k=1, trainWeights=trainWeights, valWeights=valWeights)
+  File "/dcs/large/u5573765/artifacts/sibyl/src/networks/utils/utils.py", line 159, in train_model
+    assert corr <=1, str(corr) + " " + str(scores) + " " + str(labels)
+AssertionError: nan tensor([[nan, nan, nan, nan]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<NegBackward0>) tensor([[60.0000, 60.0000,  3.4370,  3.8510]], device='cuda:0')
+
+    Training FAILED — skipping fold
+
+  --- Fold 4/5: train=196, val=49 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Training error:  optimizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, device=device, task='rank', k=1, trainWeights=trainWeights, valWeights=valWeights)
+  File "/dcs/large/u5573765/artifacts/sibyl/src/networks/utils/utils.py", line 159, in train_model
+    assert corr <=1, str(corr) + " " + str(scores) + " " + str(labels)
+AssertionError: nan tensor([[nan, nan, nan, nan]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<NegBackward0>) tensor([[0.2970, 0.2710, 0.9290, 0.9020]], device='cuda:0')
+
+    Training FAILED — skipping fold
+
+  --- Fold 5/5: train=196, val=49 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Training error: imizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, device=device, task='rank', k=1, trainWeights=trainWeights, valWeights=valWeights)
+  File "/dcs/large/u5573765/artifacts/sibyl/src/networks/utils/utils.py", line 159, in train_model
+    assert corr <=1, str(corr) + " " + str(scores) + " " + str(labels)
+AssertionError: nan tensor([[nan, nan, nan, nan]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<NegBackward0>) tensor([[ 5.5670,  7.3780, 60.0000, 60.0000]], device='cuda:0')
+
+    Training FAILED — skipping fold
+
+ERROR: No folds completed successfully.

@@ -1,0 +1,16 @@
+# Ablation: Node pooling strategy
+# Knob:    pool_type
+# Class:   algorithmic
+# Reference value: attention
+
+experiment_code: ABL_POOL_TYPE
+knob: pool_type
+description: >
+  How node embeddings are aggregated into a single graph-level
+  vector. Production used attention (smtTrainer.py default).
+
+values:
+  - attention      # ← reference
+  - max
+  - mean
+  - add

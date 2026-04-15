@@ -1,0 +1,4 @@
+_target_: pipeline.featurisers.graph_tripartite.TripartiteGraphFeaturiser
+output_type: GRAPH
+use_posenc: true
+pe_dim: 8

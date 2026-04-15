@@ -1,0 +1,4 @@
+experiment_base: smac_internal_cv_splits
+ablation_knob: smac_internal_cv_splits
+reference_value: 3
+values: [1, 3, 5, 10]

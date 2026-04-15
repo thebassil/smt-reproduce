@@ -1,0 +1,29 @@
+experiment:
+  code: "ABL-ML01"
+  hypothesis: "XGBoost or Torch may outperform scikit AdaBoost backend"
+
+reference:
+  # Algorithmic knobs (ablatable)
+  ml_core: scikit
+  pwc: false
+  greedy: true
+  logic_filter: false
+  k: 5
+  min_datapoints: 3
+  max_score: 120
+  rng: 42
+  feature_timeout: 10
+  # Hardware knobs (fixed, not ablatable)
+  cores: 4
+  par_n: 2
+  use_gpu: false
+
+ablation:
+  knob: "ml_core"
+  values: [scikit, xgboost, torch]
+
+execution:
+  suite_name: "suite_9k"
+  portfolio_id: 7
+  timeout_s: 60
+  logics: [QF_BV, QF_LIA, QF_NRA]

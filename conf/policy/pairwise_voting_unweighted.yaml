@@ -1,0 +1,4 @@
+_target_: pipeline.policies.pairwise_voting.PairwiseVotingPolicy
+decision_type: select
+weighted: false
+seed: 42

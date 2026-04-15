@@ -1,0 +1,6 @@
+defaults:
+  - dynamic_probes
+
+_target_: pipeline.featurisers.dynamic_probes.DynamicProbesFeaturiser
+output_type: VECTOR
+timeout_s: 1.0

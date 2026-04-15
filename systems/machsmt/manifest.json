@@ -1,0 +1,82 @@
+{
+  "frozen_at": "2026-03-03T14:34:03Z",
+  "hostname": "zebra-04",
+
+  "repos": {
+    "eval_machsmt": {
+      "commit": "96f895ec15b7653cd6588e49f4849cb00469a6e9",
+      "branch": "eval/suite9k-machsmt",
+      "dirty": true
+    },
+    "machsmt_source": {
+      "commit": "d0fd16c21339a19f2ba33d2e64d0c3aed8c31743",
+      "path": "/dcs/23/u5573765/cs351/eval-machsmt/artifacts/machsmt/MachSMT"
+    }
+  },
+
+  "solvers": {
+    "cvc5": {
+      "version": "This is cvc5 version 1.3.2 [git 86cecd8 on branch HEAD]",
+      "path": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5",
+      "binary_md5": "b16b61fc531846499107df9336ebfdd2"
+    },
+    "z3": {
+      "version": "Z3 version 4.15.4 - 64 bit",
+      "path": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3",
+      "binary_md5": "e60f54e17259d9ed67d748a5abf042d1"
+    }
+  },
+
+  "python": {
+    "version": "3.9.25",
+    "scikit_learn": "1.6.1",
+    "numpy": "1.26.4",
+    "pytorch": "2.6.0+cu124"
+  },
+
+  "sbatch": {
+    "partition": "tiger",
+    "cpus_per_task": 16,
+    "mem": "32G",
+    "wall_time": "04:00:00"
+  },
+
+  "machsmt_params": {
+    "portfolio_id": 7,
+    "timeout_s": 60,
+    "cores": 4,
+    "min_datapoints": 3,
+    "k_fold": 5,
+    "selectors": ["EHM", "PWC"],
+    "thread_stack_size_mb": 64,
+    "recursion_limit": 50000
+  },
+
+  "data": {
+    "suite_dir": "/dcs/large/u5573765/data/benchmarks/suite_9k",
+    "database": "/dcs/large/u5573765/db/results.sqlite",
+    "database_md5": "8c391b879b360564dc33a6898a31feee",
+    "instances": {
+      "QF_BV": 3000,
+      "QF_LIA": 3000,
+      "QF_NRA": 3000,
+      "total": 9000
+    },
+    "shared_folds_md5": "0fc46d846e8b064f5c866d355fa0c91d"
+  },
+
+  "source_checksums": {
+    "machsmt_selectors_pwc": "28296362478d99ab8f3bf6d71f2e2adf",
+    "machsmt_selectors_ehm": "069993c4d116ef4b85e043b93315a505",
+    "machsmt_selectors_base": "a941258809f65e680b2c85764e0713ab",
+    "machsmt_ml_init": "b43fe2fc093781c5d292a7eee424394e",
+    "machsmt_kfold_evaluator": "2f078c91befb3686a5858adf08cb5421",
+    "machsmt_portfolio_trainer": "635717c7ee5e2671dac8a7ac29a914e2"
+  },
+
+  "trained_models": {
+    "machsmt_QF_BV_pkl_md5": "5670c7c1649ccd0f3b913144f51af87e",
+    "machsmt_QF_LIA_pkl_md5": "9172629db8e45933042d01fadecc5f27",
+    "machsmt_QF_NRA_pkl_md5": "98c7e5c06d17e5392a502805190403d8"
+  }
+}

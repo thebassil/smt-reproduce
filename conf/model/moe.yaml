@@ -1,0 +1,5 @@
+_target_: pipeline.models.moe.MoECard
+n_experts: 4
+hidden_dim: 64
+lr: 0.001
+epochs: 100

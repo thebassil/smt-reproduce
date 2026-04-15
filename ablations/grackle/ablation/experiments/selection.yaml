@@ -1,0 +1,11 @@
+experiment: selection
+description: "Effect of candidate ordering heuristic on portfolio quality"
+knob: selection
+fly_key: selection
+reference_value: default
+values:
+  - default
+  - weak
+  - random
+  - family
+wall_time_override: null

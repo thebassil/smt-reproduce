@@ -1,0 +1,4 @@
+_target_: pipeline.models.solver_logic_pwc.SolverLogicPWCCard
+fallback: pooled
+min_instances_per_logic: 10
+classifier_type: adaboost

@@ -1,0 +1,13 @@
+experiment: grackle_timeout
+description: "Effect of total training budget on portfolio quality"
+knob: grackle_timeout
+fly_key: timeout
+reference_value: 43200
+values:
+  - 3600
+  - 10800
+  - 43200
+wall_time_override:
+  "3600": "14:00:00"
+  "10800": "18:00:00"
+  "43200": "14:00:00"

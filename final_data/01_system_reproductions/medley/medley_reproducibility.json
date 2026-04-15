@@ -1,0 +1,256 @@
+{
+  "experiment": "Medley K-Fold Cross-Validation (All Classifiers)",
+  "description": "5-fold CV for 8 Medley classifier variants on suite_9k (9000 instances, 3 logics). Evaluates online algorithm selection using bag-of-words syntactic features and dispatch-based solver simulation.",
+  "date": "2026-03-02",
+  "cluster": "DCS HPC (University of Warwick)",
+  "slurm_job_id": 1258859,
+
+  "solvers": {
+    "cvc5": {
+      "version": "1.3.2 (Linux x86_64 static)",
+      "binary": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5"
+    },
+    "z3": {
+      "version": "4.15.4",
+      "binary": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3"
+    }
+  },
+
+  "software_versions": {
+    "python": "3.9.25",
+    "medley_solver": {
+      "version": "SAT2021 branch",
+      "source": "https://github.com/uclid-org/medley-solver.git",
+      "commit": "4026cb3",
+      "commit_message": "removed duplication in README (2021-04-15)",
+      "artifact_path": "/dcs/large/u5573765/artifacts/medley-solver"
+    },
+    "eval_repo": {
+      "path": "/dcs/23/u5573765/cs351/eval-medley",
+      "branch": "eval/suite9k-medley"
+    },
+    "pip_packages": {
+      "numpy": "1.26.4",
+      "scikit-learn": "1.6.1",
+      "z3-solver": "4.16.0.0",
+      "tqdm": "4.65.0",
+      "dill": "0.3.5.1",
+      "more-itertools": "10.8.0"
+    }
+  },
+
+  "environment": {
+    "env_file": "/dcs/large/u5573765/env.sh",
+    "env_vars": {
+      "SMT_LARGE_STORAGE": "/dcs/large/u5573765",
+      "SMT_DATA_ROOT": "/dcs/large/u5573765/data",
+      "SMT_DB": "/dcs/large/u5573765/db/results.sqlite",
+      "SMT_Z3": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3",
+      "SMT_CVC5": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5",
+      "SMT_TOOLS": "/dcs/large/u5573765/tools",
+      "SMT_ARTIFACTS": "/dcs/large/u5573765/artifacts"
+    },
+    "PATH_additions": [
+      "/dcs/large/u5573765/tools/z3-4.15.4/bin",
+      "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin"
+    ]
+  },
+
+  "benchmark_suite": {
+    "name": "suite_9k",
+    "path": "/dcs/large/u5573765/data/benchmarks/suite_9k",
+    "total_instances": 9000,
+    "logics": {
+      "QF_BV":  { "instances": 3000 },
+      "QF_LIA": { "instances": 3000 },
+      "QF_NRA": { "instances": 3000 }
+    },
+    "total_families": 30
+  },
+
+  "cross_validation": {
+    "method": "5-fold",
+    "folds_file": "shared_folds_k5.json",
+    "split_strategy": "GroupKFold (stratified by logic, grouped by family)",
+    "families_per_fold": { "train": 25, "test": 5 },
+    "shared_with": ["MachSMT", "Grackle", "SMTgazer", "Sibyl"]
+  },
+
+  "portfolio": {
+    "portfolio_id": 7,
+    "description": "6-config cross-logic portfolio",
+    "configs": [
+      { "medley_name": "Z3",        "our_config": "cvc5_baseline_default",       "config_id": 115 },
+      { "medley_name": "CVC4",      "our_config": "cvc5_qfnra_05_nl_cov",       "config_id": 109 },
+      { "medley_name": "BOOLECTOR", "our_config": "cvc5_qfnra_08_decision_just", "config_id": 112 },
+      { "medley_name": "YICES",     "our_config": "z3_baseline_default",         "config_id": 114 },
+      { "medley_name": "MathSAT",   "our_config": "z3_baseline_qfbv_sat_euf_sat","config_id": 118 },
+      { "medley_name": "Bitwuzla",  "our_config": "z3_baseline_qflia_case_split","config_id": 116 }
+    ],
+    "total_configs": 6,
+    "total_runs_in_db": 54000,
+    "note": "6 configs x 9000 instances. All configs run on all logics."
+  },
+
+  "training_parameters": {
+    "feature_setting": "bow (bag-of-words syntactic keyword counts)",
+    "feature_dimension": "169 keyword counts + total_token_count + timeout_flag = 171",
+    "feature_extraction_timeout": 1.0,
+    "timeout_per_instance": 60,
+    "timeout_manager": "expo (ExponentialDist)",
+    "reward_scheme": "bump: 1 + (1 - elapsed/timeout)^4 if solved, else 0",
+    "normalization": "incremental running mean (point / (mean + 1e-9))",
+    "classifier_parameters": {
+      "knearest": {
+        "k": 10,
+        "epsilon": 0.9,
+        "epsilon_decay": 0.9,
+        "voting": "count-based (each of k neighbors gets one vote)"
+      },
+      "neighbor": {
+        "k_time": 40,
+        "epsilon": 0.9,
+        "epsilon_decay": 0.9,
+        "kind": "full"
+      },
+      "MLP": {
+        "model": "sklearn.neural_network.MLPClassifier (default config)",
+        "training": "online partial_fit, one-hot encoded best solver"
+      },
+      "linear": {
+        "alpha": 2.358,
+        "method": "contextual linear bandit with UCB"
+      },
+      "thompson": {
+        "prior": "Beta(1,1) per solver",
+        "update": "a += reward, b += (1 - reward)"
+      },
+      "exp3": {
+        "gamma": 0.07,
+        "method": "adversarial bandit with exponential weight updates"
+      },
+      "greedy": {
+        "epsilon": 0.9,
+        "decay": 0.9,
+        "method": "epsilon-greedy with empirical mean tracking"
+      },
+      "random": {
+        "method": "uniform random shuffle of solver ordering"
+      }
+    },
+    "exponential_timeout_manager": {
+      "confidence": 0.95,
+      "initial_lambda": "1 / (timeout / num_solvers) = 0.1"
+    },
+    "exploration_override": "count=999999 during evaluation (forces pure exploitation)"
+  },
+
+  "sbatch_flags": {
+    "partition": "tiger",
+    "cpus_per_task": 8,
+    "mem": "32G",
+    "time": "04:00:00",
+    "workers": 1,
+    "output": "medley_kfold_%j.out",
+    "error": "medley_kfold_%j.err"
+  },
+
+  "cli_invocations": {
+    "training_per_fold_per_logic": {
+      "command": "python3 run_medley_wrapper.py <STAGING_DIR>/<LOGIC>/<FAMILY>/ <OUTPUT_DIR>/results.csv --classifier <CLASSIFIER> --feature_setting bow --timeout 60 --seed 42 --save_classifier <OUTPUT_DIR>/classifier_<LOGIC>.pkl",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-medley",
+      "note": "run_medley_wrapper.py patches glob for Python 3.9 compat then exec()s bin/medley"
+    },
+    "actual_medley_binary": {
+      "command": "bin/medley <INPUT_DIR> <OUTPUT>.csv --classifier <TYPE> --feature_setting bow -t 60 --seed 42 -sc <SAVE_PATH>",
+      "binary_path": "/dcs/large/u5573765/artifacts/medley-solver/bin/medley",
+      "note": "Python 3 script, not a compiled binary"
+    },
+    "full_pipeline": {
+      "command": "python3 medley_kfold_all.py --db benchmark-suite/temp_benchmarks/db/results.sqlite --k 5 --seed 42 --timeout 60 --classifiers all --output-dir medley_kfold_results --work-dir medley_kfold_work --workers 1",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-medley"
+    },
+    "submit": "sbatch run_medley_kfold.sbatch"
+  },
+
+  "data_staging": {
+    "description": "Pre-computed solver results staged as CSV files for Medley's dispatch-based evaluation",
+    "staging_dir": "medley_staging_bin/data/benchmarks/suite_9k",
+    "structure": "<LOGIC>/<FAMILY>/{Z3,CVC4,BOOLECTOR,YICES,MathSAT,Bitwuzla}.csv",
+    "csv_format": "file_path,_,_,runtime_seconds,status",
+    "solver_config_mapping": "medley_staging_bin/solver_config_mapping.csv",
+    "note": "Medley reads from CSV dispatch files, never runs actual solver binaries. Time budgets are enforced by comparing CSV runtimes against allocated timeouts."
+  },
+
+  "evaluation_metrics": {
+    "primary": "PAR-2 (Penalized Average Runtime-2: 2 * timeout if unsolved)",
+    "secondary": ["solved_count", "solved_percentage"],
+    "baselines": {
+      "VBS": "Virtual Best Solver (oracle: picks fastest solver per instance)",
+      "SBS": "Single Best Solver (best single config across all training data)",
+      "CSBS": "Context-aware SBS (best single config per logic from training data)"
+    },
+    "comparison": "vs_csbs_pct and vs_vbs_pct report PAR-2 percentage difference"
+  },
+
+  "output_files": {
+    "results_dir": "medley_kfold_results/",
+    "per_classifier_decisions": "decisions_{classifier}.csv",
+    "decisions_csv_columns": ["file_path", "predicted_config", "status", "runtime_ms", "fold", "logic"],
+    "summary": "kfold_summary_all_classifiers.csv",
+    "per_fold": "kfold_perfold_all_classifiers.csv",
+    "work_dir": "medley_kfold_work/",
+    "work_structure": "<classifier>/fold<N>/output/{classifier_<LOGIC>.pkl, results.csv}"
+  },
+
+  "database_integration": {
+    "db_path": "benchmark-suite/temp_benchmarks/db/results.sqlite (symlink to /dcs/large/u5573765/db/results.sqlite)",
+    "tables_written": ["ml_selectors", "decisions"],
+    "selector_naming": "medley_kfold_{classifier}_{logic}_{suite}",
+    "model_type_naming": "Medley_{classifier}_KFold{k}",
+    "note": "Use --skip-db-write to prevent database writes during testing"
+  },
+
+  "classifiers_evaluated": [
+    {
+      "name": "knearest",
+      "type": "ML (K-Nearest Neighbors)",
+      "description": "Count-based KNN voting. Finds k=10 nearest solved problems by L2 distance on normalized BoW features, votes by solver frequency."
+    },
+    {
+      "name": "MLP",
+      "type": "ML (Neural Network)",
+      "description": "sklearn MLPClassifier with online partial_fit. One-hot encodes best solver as classification target."
+    },
+    {
+      "name": "neighbor",
+      "type": "ML (Nearest Neighbor)",
+      "description": "Distance-weighted nearest neighbor with speed-based solver ordering."
+    },
+    {
+      "name": "linear",
+      "type": "ML (Contextual Linear Bandit)",
+      "description": "UCB-based contextual bandit with linear reward model. alpha=2.358 confidence parameter."
+    },
+    {
+      "name": "thompson",
+      "type": "Bandit (Thompson Sampling)",
+      "description": "Bayesian bandit with Beta(1,1) priors per solver. Context-free."
+    },
+    {
+      "name": "exp3",
+      "type": "Bandit (Adversarial)",
+      "description": "Exp3 adversarial bandit with gamma=0.07 exploration. Weight-based exponential updates."
+    },
+    {
+      "name": "greedy",
+      "type": "Bandit (Epsilon-Greedy)",
+      "description": "Epsilon-greedy with empirical mean tracking. epsilon=0.9, decay=0.9."
+    },
+    {
+      "name": "random",
+      "type": "Baseline",
+      "description": "Uniform random shuffle of solver ordering. No learning."
+    }
+  ]
+}

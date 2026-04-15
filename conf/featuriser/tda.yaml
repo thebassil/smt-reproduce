@@ -1,0 +1,4 @@
+_target_: pipeline.featurisers.tda_features.TDAFeatures
+output_type: VECTOR
+max_dim: 1
+max_edge_length: 2.0

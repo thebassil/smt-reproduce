@@ -1,0 +1,4 @@
+experiment,variant_idx,value,total,avg_par2,solved,solved_pct,vs_csbs_pct,vs_vbs_pct
+ABL-MDY-H08,0,full,9000,23.025,7472,83.0,+13.1,+73.2
+ABL-MDY-H08,1,single,9000,24.783,7366,81.8,+21.8,+86.4
+ABL-MDY-H08,2,greedy,9000,28.061,7064,78.5,+37.9,+111.1

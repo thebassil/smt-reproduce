@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SurvivalCurveSchedulePolicy,QF_LIA,123,0,27287.03,65.7,3.8293,84.7,20.1,2400.0,600.0,1301809,86
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SurvivalCurveSchedulePolicy,QF_LIA,123,1,29661.98,62.3,5.1508,85.6,19.7,2400.0,600.0,1301809,86
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SurvivalCurveSchedulePolicy,QF_LIA,123,2,25170.84,68.8,3.8532,84.6,20.2,2400.0,600.0,1301809,86
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SurvivalCurveSchedulePolicy,QF_LIA,123,3,31228.87,58.8,3.5558,82.6,23.5,2400.0,600.0,1301809,86
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SurvivalCurveSchedulePolicy,QF_LIA,123,4,26037.30,67.5,3.0899,87.9,20.2,2400.0,600.0,1301809,86
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SurvivalCurveSchedulePolicy,QF_LIA,123,MEAN,27877.20,64.6,-1343.0801,529.1,,,,1301809,86

@@ -1,0 +1,9 @@
+experiment: atavistic
+description: "Effect of evolving only from initial seeds on portfolio quality"
+knob: atavistic
+fly_key: atavistic
+reference_value: false
+values:
+  - false
+  - true
+wall_time_override: null

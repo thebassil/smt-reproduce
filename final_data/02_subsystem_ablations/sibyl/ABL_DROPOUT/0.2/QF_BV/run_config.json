@@ -1,0 +1,65 @@
+{
+  "algorithmic": {
+    "epochs": 20,
+    "time_steps": 2,
+    "dropout": 0.2,
+    "pool_type": "attention",
+    "edge_sets": [
+      "AST",
+      "Back-AST",
+      "Data"
+    ],
+    "mode": "cat",
+    "no_jump": true,
+    "data_weight": "best"
+  },
+  "hardware": {
+    "partition": "gecko",
+    "gres": "gpu:1",
+    "cpus_per_task": 6,
+    "mem": null,
+    "time": "08:00:00"
+  },
+  "convention": {
+    "par_n": 2,
+    "scoring": "PAR-2",
+    "timeout_s": 60
+  },
+  "architecture": {
+    "_comment": "Hardcoded in GAT constructor \u2014 NOT ablated",
+    "numAttentionLayers": 5,
+    "inputLayerSize": 67,
+    "k": 20,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "ModifiedMarginRankingLoss(margin=0.1)",
+    "scheduler": "ReduceLROnPlateau(patience=3)"
+  },
+  "data": {
+    "labels_qf_bv": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/labels_QF_BV.json",
+    "labels_qf_lia": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/labels_QF_LIA.json",
+    "labels_qf_nra": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/labels_QF_NRA.json",
+    "portfolio_qf_bv": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/portfolio.txt",
+    "portfolio_qf_lia": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/portfolio.txt",
+    "portfolio_qf_nra": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/portfolio.txt",
+    "benchmark_dir_qf_bv": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/workspace/QF_BV",
+    "benchmark_dir_qf_lia": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/workspace/QF_LIA",
+    "benchmark_dir_qf_nra": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/workspace/QF_NRA",
+    "benchmark_dir": "/dcs/23/u5573765/cs351/eval-sibyl/sibyl_results/workspace",
+    "logics": [
+      "QF_BV",
+      "QF_LIA",
+      "QF_NRA"
+    ]
+  },
+  "paths": {
+    "sibyl_root": "/dcs/23/u5573765/cs351/eval-sibyl",
+    "trainer": "/dcs/large/u5573765/artifacts/sibyl/src/networks/smtTrainer.py",
+    "inference": "/dcs/large/u5573765/artifacts/sibyl/src/networks/inference.py",
+    "env_script": "/dcs/large/u5573765/env.sh"
+  },
+  "results_root": "/dcs/large/u5573765/ablation_results/sibyl_9k",
+  "experiment_code": "ABL_DROPOUT",
+  "knob": "dropout",
+  "value": 0.2
+}

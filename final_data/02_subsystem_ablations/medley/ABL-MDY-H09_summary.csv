@@ -1,0 +1,3 @@
+experiment,variant_idx,value,total,avg_par2,solved,solved_pct,vs_csbs_pct,vs_vbs_pct
+ABL-MDY-H09,0,True,9000,23.025,7472,83.0,+13.1,+73.2
+ABL-MDY-H09,1,False,9000,120.000,0,0.0,+489.6,+802.6

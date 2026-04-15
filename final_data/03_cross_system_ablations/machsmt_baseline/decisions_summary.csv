@@ -1,0 +1,3 @@
+logic,total,cvc5::cvc5_bv_default,cvc5::cvc5_bv_eager,cvc5::cvc5_lia_arith,cvc5::cvc5_lia_default,z3::z3_bv_default,z3::z3_bv_eager,z3::z3_lia_arith,z3::z3_lia_default
+QF_BV,250,38 (15.2%),38 (15.2%),-,-,115 (46.0%),59 (23.6%),-,-
+QF_LIA,250,-,-,55 (22.0%),8 (3.2%),-,-,48 (19.2%),139 (55.6%)

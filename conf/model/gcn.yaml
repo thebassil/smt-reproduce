@@ -1,0 +1,6 @@
+_target_: pipeline.models.gcn.GCNCard
+hidden_dim: 64
+n_layers: 2
+lr: 0.001
+epochs: 100
+batch_size: 32

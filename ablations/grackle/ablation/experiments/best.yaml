@@ -1,0 +1,10 @@
+experiment: best
+description: "Effect of survival threshold on portfolio quality"
+knob: best
+fly_key: best
+reference_value: 1
+values:
+  - 1
+  - 2
+  - 4
+wall_time_override: null

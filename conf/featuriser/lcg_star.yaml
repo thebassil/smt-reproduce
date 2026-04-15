@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.graph_lcg_star.LCGStarFeaturiser
+output_type: GRAPH

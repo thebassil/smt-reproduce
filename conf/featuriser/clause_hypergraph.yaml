@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.graph_hypergraph.HypergraphFeaturiser
+output_type: GRAPH

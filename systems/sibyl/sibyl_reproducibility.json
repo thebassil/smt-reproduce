@@ -1,0 +1,164 @@
+{
+  "experiment": "Sibyl GNN Algorithm Selection — O4 Evaluation",
+  "date": "2026-03-03",
+  "cluster": "DCS HPC, gecko/falcon partition (GPU)",
+  "slurm_job_id": 1258831,
+
+  "solvers": {
+    "cvc5": {
+      "version": "1.3.2",
+      "binary": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5"
+    },
+    "z3": {
+      "version": "4.15.4",
+      "binary": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3"
+    }
+  },
+
+  "software": {
+    "python": "3.9.25",
+    "sibyl": "upstream GNN code at /dcs/large/u5573765/artifacts/sibyl",
+    "sibyl_source_commit": "133d33f1a473eb46d4f6c09a410223907cab6104",
+    "eval_repo_commit": "d0fd16c21339a19f2ba33d2e64d0c3aed8c31743",
+    "eval_repo_branch": "eval/suite9k-sibyl",
+    "trainer": "sibyl/src/networks/smtTrainer.py (GAT + attention pooling)",
+    "inference": "sibyl/src/networks/inference.py",
+    "graph_builder": "sibyl/src/builder (AST → graph .npz)",
+    "pytorch": "CUDA 12.4",
+    "key_packages": ["torch", "torch_geometric", "numpy"]
+  },
+
+  "environment": {
+    "env_file": "/dcs/large/u5573765/env.sh",
+    "PYPROVE_BENCHMARKS": "/dcs/large/u5573765/data/benchmarks/suite_9k",
+    "SMT_Z3": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3",
+    "SMT_CVC5": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5",
+    "SMT_LARGE_STORAGE": "/dcs/large/u5573765",
+    "SMT_DATA_ROOT": "/dcs/large/u5573765/data",
+    "SMT_DB": "/dcs/large/u5573765/db/results.sqlite",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+    "PATH_additions": [
+      "/dcs/large/u5573765/tools/z3-4.15.4/bin",
+      "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin"
+    ]
+  },
+
+  "benchmark_suite": {
+    "name": "suite_9k",
+    "path": "/dcs/large/u5573765/data/benchmarks/suite_9k",
+    "total_instances": 9000,
+    "QF_BV": 3000,
+    "QF_LIA": 3000,
+    "QF_NRA": 3000
+  },
+
+  "cross_validation": {
+    "method": "5-fold GroupKFold (family-aware)",
+    "folds_file": "shared_folds_k5.json",
+    "folds_path": "/dcs/23/u5573765/cs351/eval-sibyl/shared_folds_k5.json",
+    "shared_with": ["Grackle", "MachSMT", "SMTgazer", "Medley"],
+    "note": "Families are never split across folds — test families are entirely unseen during training"
+  },
+
+  "sibyl_training_params": {
+    "portfolio_id": 7,
+    "n_configs": 6,
+    "config_order": [
+      "z3_baseline_default",
+      "z3_baseline_qflia_case_split",
+      "z3_baseline_qfbv_sat_euf_sat",
+      "cvc5_baseline_default",
+      "cvc5_qfnra_05_nl_cov",
+      "cvc5_qfnra_08_decision_just"
+    ],
+    "epochs": 20,
+    "time_steps": 2,
+    "edge_sets": ["AST_Back", "AST_Data"],
+    "pool_type": "attention",
+    "data_weight": "best",
+    "mode": "cat",
+    "no_jump": true,
+    "dropout": 0,
+    "max_graph_nodes": 500000,
+    "solver_timeout_per_instance_s": 60,
+    "inference_workers": 12
+  },
+
+  "sbatch_flags": {
+    "smoke_test": {
+      "partition": "gecko,falcon",
+      "cpus_per_task": 4,
+      "gres": "gpu:1",
+      "wall_time": "00:30:00",
+      "mail_type": "END,FAIL"
+    },
+    "training": {
+      "partition": "gecko,falcon",
+      "cpus_per_task": 12,
+      "gres": "gpu:1",
+      "wall_time": "2-00:00:00",
+      "mail_type": "END,FAIL,TIME_LIMIT_80"
+    }
+  },
+
+  "cli_invocations": {
+    "smoke_test": {
+      "command": "python3 -u smoke_test_sibyl.py",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-sibyl",
+      "description": "Samples 200 QF_LIA benchmarks, trains 2 epochs, infers on 20 held-out, PASS if >=75% valid"
+    },
+    "training": {
+      "command": "python3 -u sibyl_portfolio_trainer.py --stage train --epochs 20 --output-dir sibyl_results",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-sibyl",
+      "description": "5-fold GroupKFold CV x 3 logics, 20 epochs/fold, using upstream smtTrainer.py"
+    },
+    "merge": {
+      "command": "python3 -u sibyl_portfolio_trainer.py --stage merge --output-dir sibyl_results",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-sibyl",
+      "description": "Merge per-logic decisions CSVs into combined decisions_all.csv"
+    },
+    "evaluation": {
+      "command": "python3 -u sibyl_evaluate_decisions.py --output-dir sibyl_results",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-sibyl",
+      "description": "Evaluate Sibyl vs VBS/SBS/Random baselines, write decisions to DB"
+    },
+    "submit_command": "sbatch /dcs/23/u5573765/cs351/eval-sibyl/smoke_test_sibyl.sbatch"
+  },
+
+  "runs": {
+    "QF_BV": {
+      "benchmarks": 3000,
+      "valid_after_filtering": 2944,
+      "missing_graphs": 17,
+      "too_large_graphs": 39,
+      "folds_trained": "4/5 (fold 5 had 0 test instances)",
+      "status": "completed"
+    },
+    "QF_LIA": {
+      "benchmarks": 3000,
+      "valid_after_filtering": 3000,
+      "missing_graphs": 0,
+      "too_large_graphs": 0,
+      "folds_trained": "5/5",
+      "status": "in_progress"
+    },
+    "QF_NRA": {
+      "benchmarks": 3000,
+      "valid_after_filtering": "pending",
+      "folds_trained": "pending",
+      "status": "pending"
+    }
+  },
+
+  "outputs": {
+    "per_logic_decisions": [
+      "sibyl_results/decisions_QF_BV.csv",
+      "sibyl_results/decisions_QF_LIA.csv",
+      "sibyl_results/decisions_QF_NRA.csv"
+    ],
+    "merged_decisions": "sibyl_results/decisions_all.csv",
+    "models": "sibyl_results/models/sibyl_<LOGIC>_fold<N>.pt",
+    "evaluation_summary": "sibyl_results/evaluation_summary.csv",
+    "full_decision_table": "sibyl_results/full_decision_table.csv"
+  }
+}

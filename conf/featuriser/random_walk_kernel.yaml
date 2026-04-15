@@ -1,0 +1,6 @@
+_target_: pipeline.featurisers.random_walk_kernel.RandomWalkKernel
+output_type: VECTOR
+n_walks: 100
+walk_length: 5
+bucket_size: 1024
+seed: 42

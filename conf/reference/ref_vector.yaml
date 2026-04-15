@@ -1,0 +1,6 @@
+defaults:
+  - /featuriser: machsmt_162
+  - /model: adaboost_ehm
+  - /policy: select_argmin
+
+ref_code: REF-VECTOR

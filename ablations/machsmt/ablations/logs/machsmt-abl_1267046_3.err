@@ -1,0 +1,1162 @@
+/dcs/23/u5573765/.local/lib/python3.9/site-packages/torch/__init__.py:1236: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+Fatal Python error: _Py_CheckRecursiveCall: Cannot recover from stack overflow.
+Python runtime state: initialized
+
+Thread 0x000014ac2723f640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 68 in count_occurrences
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 68 in funcwrap
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac3f3ff640 (most recent call first):
+<no Python frame>
+
+Thread 0x000014ac6f3bf640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 72 in count_occurrences
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 68 in funcwrap
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac78623640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 72 in count_occurrences
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 68 in funcwrap
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac2637c640 (most recent call first):
+  File "/usr/lib64/python3.9/threading.py", line 1080 in _wait_for_tstate_lock
+  File "/usr/lib64/python3.9/threading.py", line 1064 in join
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/StoppableThread.py", line 126 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ab0617f640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 67 in count_occurrences
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 68 in funcwrap
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Current thread 0x000014ac2683d640 (most recent call first):
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/exceptions.py", line 76 in getMsg
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/exceptions.py", line 52 in __init__
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 94 in __init__
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 68 in funcwrap
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac78de6640 (most recent call first):
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 576 in _handle_results
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac78fe7640 (most recent call first):
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 528 in _handle_tasks
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac791e8640 (most recent call first):
+  File "/usr/lib64/python3.9/selectors.py", line 416 in select
+  File "/usr/lib64/python3.9/multiprocessing/connection.py", line 935 in wait
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 499 in _wait_for_updates
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 519 in _handle_workers
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac793e9640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac795ea640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 77 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac797eb640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac799ec640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac79bed640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac79dee640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 116 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac79fef640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7a1f0640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7a3f1640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7a5f2640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7a7f3640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 116 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7a9f4640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 81 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7abf5640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 81 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7adf6640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7aff7640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7b1f8640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7b3f9640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7b5fa640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7b7fb640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7b9fc640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7bbfd640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7bdfe640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 71 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac7bfff640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac843e1640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac845e2640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 36 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac847e3640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac849e4640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac84be5640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac84de6640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac84fe7640 (most recent call first):
+  File "/usr/lib64/python3.9/threading.py", line 1080 in _wait_for_tstate_lock
+  File "/usr/lib64/python3.9/threading.py", line 1064 in join
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 86 in func_timeout
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 75 in compute_core_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 48 in compute_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 120 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac851e8640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac853e9640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac855ea640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac857eb640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac859ec640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac85bed640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 9 in __init__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac85dee640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac85fef640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 100 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac861f0640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac863f1640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 104 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac865f2640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac867f3640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac869f4640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 108 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac86bf5640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac86df6640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac86ff7640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac871f8640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac873f9640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac875fa640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac877fb640 (most recent call first):
+  File "/usr/lib64/python3.9/threading.py", line 312 in wait
+  File "/usr/lib64/python3.9/threading.py", line 581 in wait
+  File "/usr/lib64/python3.9/threading.py", line 904 in start
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 85 in func_timeout
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 75 in compute_core_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 48 in compute_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 120 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac879fc640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac87bfd640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 103 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac87dfe640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac87fff640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac903e1640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac905e2640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac907e3640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac909e4640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac90be5640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac90de6640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac90fe7640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac911e8640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac913e9640 (most recent call first):
+  File "/usr/lib64/python3.9/threading.py", line 1080 in _wait_for_tstate_lock
+  File "/usr/lib64/python3.9/threading.py", line 1064 in join
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 86 in func_timeout
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 75 in compute_core_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 48 in compute_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 120 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac915ea640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 36 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac917eb640 (most recent call first):
+  File "/usr/lib64/python3.9/threading.py", line 1080 in _wait_for_tstate_lock
+  File "/usr/lib64/python3.9/threading.py", line 1064 in join
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 86 in func_timeout
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 75 in compute_core_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 48 in compute_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 120 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac919ec640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 71 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac91bed640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac91dee640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac91fef640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 59 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac921f0640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac923f1640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac925f2640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac927f3640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 81 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac929f4640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac92bf5640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac92df6640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac92ff7640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 100 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac931f8640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac933f9640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac935fa640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac937fb640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac939fc640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac93bfd640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac93dfe640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac93fff640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac9c3e1640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac9c5e2640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac9c7e3640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac9c9e4640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000014ac9cbe5640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 468 in _parse_one
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 48 in mapstar
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+...
+/var/spool/slurmd/job1269424/slurm_script: line 31: 2685367 Aborted                 (core dumped) python /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py run "$YAML" --execute

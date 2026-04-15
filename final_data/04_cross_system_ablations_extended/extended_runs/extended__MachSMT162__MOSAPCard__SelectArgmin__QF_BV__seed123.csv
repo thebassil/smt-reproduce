@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,MachSMT162,MOSAPCard,SelectArgmin,QF_BV,123,0,14028.75,82.5,0.0519,711.6,158.3,2400.0,600.0,1299621,57
+extended,REF-VECTOR,MachSMT162,MOSAPCard,SelectArgmin,QF_BV,123,1,11800.23,85.8,0.0773,664.0,193.4,2400.0,600.0,1299621,57
+extended,REF-VECTOR,MachSMT162,MOSAPCard,SelectArgmin,QF_BV,123,2,11447.33,86.2,0.1039,643.0,221.7,2400.0,600.0,1299621,57
+extended,REF-VECTOR,MachSMT162,MOSAPCard,SelectArgmin,QF_BV,123,3,10968.83,87.2,0.0479,723.5,140.7,2400.0,600.0,1299621,57
+extended,REF-VECTOR,MachSMT162,MOSAPCard,SelectArgmin,QF_BV,123,4,11400.38,86.2,0.0877,718.0,145.3,2400.0,600.0,1299621,57
+extended,REF-VECTOR,MachSMT162,MOSAPCard,SelectArgmin,QF_BV,123,MEAN,11929.10,85.6,81.3654,4319.5,,,,1299621,57

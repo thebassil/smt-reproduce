@@ -1,0 +1,9 @@
+experiment: trainer_restarts
+description: "Effect of multiple restart support on portfolio quality"
+knob: trainer_restarts
+fly_key: trainer.restarts
+reference_value: true
+values:
+  - true
+  - false
+wall_time_override: null

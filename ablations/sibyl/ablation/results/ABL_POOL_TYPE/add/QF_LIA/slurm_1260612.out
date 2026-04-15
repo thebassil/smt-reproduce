@@ -1,0 +1,78 @@
+[Wed  4 Mar 20:39:28 GMT 2026] Sibyl ablation: ABL_POOL_TYPE | pool_type=add | QF_LIA
+SLURM_JOB_ID=1260612
+Node: gecko-03
+GPU: NVIDIA A10
+SMT environment loaded from /dcs/large/u5573765
+======================================================================
+Sibyl Ablation Runner
+  Experiment: ABL_POOL_TYPE
+  Knob:       pool_type = add
+  Logic:      QF_LIA
+  Output:     /dcs/23/u5573765/cs351/smt-ablation-sibyl/ablation/results/ABL_POOL_TYPE/add/QF_LIA
+======================================================================
+
+  Logic: QF_LIA
+  Benchmarks: 250
+  Configs: ['z3_lia_default', 'z3_lia_arith', 'cvc5_lia_default', 'cvc5_lia_arith']
+  K-folds: 5
+
+  --- Fold 1/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Training error: imizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, device=device, task='rank', k=1, trainWeights=trainWeights, valWeights=valWeights)
+  File "/dcs/large/u5573765/artifacts/sibyl/src/networks/utils/utils.py", line 159, in train_model
+    assert corr <=1, str(corr) + " " + str(scores) + " " + str(labels)
+AssertionError: nan tensor([[nan, nan, nan, nan]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<NegBackward0>) tensor([[60.0000, 60.0000,  7.2950,  7.2390]], device='cuda:0')
+
+    Training FAILED — skipping fold
+
+  --- Fold 2/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Training error: imizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, device=device, task='rank', k=1, trainWeights=trainWeights, valWeights=valWeights)
+  File "/dcs/large/u5573765/artifacts/sibyl/src/networks/utils/utils.py", line 159, in train_model
+    assert corr <=1, str(corr) + " " + str(scores) + " " + str(labels)
+AssertionError: nan tensor([[nan, nan, nan, nan]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<NegBackward0>) tensor([[60.0000, 60.0000,  7.2950,  7.2390]], device='cuda:0')
+
+    Training FAILED — skipping fold
+
+  --- Fold 3/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Training error: imizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, device=device, task='rank', k=1, trainWeights=trainWeights, valWeights=valWeights)
+  File "/dcs/large/u5573765/artifacts/sibyl/src/networks/utils/utils.py", line 159, in train_model
+    assert corr <=1, str(corr) + " " + str(scores) + " " + str(labels)
+AssertionError: nan tensor([[nan, nan, nan, nan]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<NegBackward0>) tensor([[60.0000, 60.0000,  7.2950,  7.2390]], device='cuda:0')
+
+    Training FAILED — skipping fold
+
+  --- Fold 4/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Training error: imizer=optimizer, scheduler=scheduler, num_epochs=args.epochs, device=device, task='rank', k=1, trainWeights=trainWeights, valWeights=valWeights)
+  File "/dcs/large/u5573765/artifacts/sibyl/src/networks/utils/utils.py", line 159, in train_model
+    assert corr <=1, str(corr) + " " + str(scores) + " " + str(labels)
+AssertionError: nan tensor([[nan, nan, nan, nan]], device='cuda:0', dtype=torch.float16,
+       grad_fn=<NegBackward0>) tensor([[60.0000, 60.0000,  7.2950,  7.2390]], device='cuda:0')
+
+    Training FAILED — skipping fold
+
+  --- Fold 5/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=add, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=best)...
+    Evaluating on 50 benchmarks...
+    VBS:   48/50 solved, PAR-2=335.7
+    Sibyl: 37/50 solved, PAR-2=1813.0
+    SBS:   47/50 solved, PAR-2=469.8
+    VBS matches: 11/50
+    Wall: 178.9s
+
+  Wrote: /dcs/23/u5573765/cs351/smt-ablation-sibyl/ablation/results/ABL_POOL_TYPE/add/QF_LIA/perfold.csv
+  Wrote: /dcs/23/u5573765/cs351/smt-ablation-sibyl/ablation/results/ABL_POOL_TYPE/add/QF_LIA/summary.csv
+
+======================================================================
+SUMMARY: ABL_POOL_TYPE | pool_type=add | QF_LIA
+  Sibyl: 37/50 solved (74.0%), PAR-2=1813.0
+  vs SBS: -285.9%
+  Closeness to VBS: -1002.1%
+  Wall time: 179s
+======================================================================
+[Wed  4 Mar 20:42:46 GMT 2026] Done.

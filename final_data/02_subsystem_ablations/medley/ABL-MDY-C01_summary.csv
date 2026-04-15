@@ -1,0 +1,9 @@
+experiment,variant_idx,value,total,avg_par2,solved,solved_pct,vs_csbs_pct,vs_vbs_pct
+ABL-MDY-C01,0,neighbor,9000,23.025,7472,83.0,+13.1,+73.2
+ABL-MDY-C01,1,knearest,9000,22.424,7533,83.7,+10.2,+68.7
+ABL-MDY-C01,2,MLP,9000,31.408,6853,76.1,+54.3,+136.2
+ABL-MDY-C01,3,linear,9000,30.612,6907,76.7,+50.4,+130.2
+ABL-MDY-C01,4,thompson,9000,21.064,7631,84.8,+3.5,+58.4
+ABL-MDY-C01,5,exp3,9000,21.521,7583,84.3,+5.7,+61.9
+ABL-MDY-C01,6,greedy,9000,22.000,7542,83.8,+8.1,+65.5
+ABL-MDY-C01,7,random,9000,30.919,6874,76.4,+51.9,+132.6

@@ -1,0 +1,187 @@
+{
+  "experiment": "MachSMT Algorithm Selection — Suite 9k Evaluation",
+  "date": "2026-03-03",
+  "cluster": "DCS HPC, tiger partition",
+  "slurm_job_ids": {
+    "ehm_kfold": "run_machsmt_kfold.sbatch",
+    "pwc_kfold": "run_machsmt_pwc.sbatch"
+  },
+
+  "solvers": {
+    "cvc5": {
+      "version": "1.3.2",
+      "binary": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5"
+    },
+    "z3": {
+      "version": "4.15.4",
+      "binary": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3"
+    }
+  },
+
+  "software": {
+    "python": "3.9.25",
+    "scikit_learn": "1.6.1",
+    "numpy": "1.26.4",
+    "pytorch": "2.6.0+cu124",
+    "machsmt_source": "artifacts/machsmt/MachSMT",
+    "machsmt_source_commit": "d0fd16c21339a19f2ba33d2e64d0c3aed8c31743",
+    "eval_repo_commit": "96f895ec15b7653cd6588e49f4849cb00469a6e9",
+    "eval_repo_branch": "eval/suite9k-machsmt",
+    "selectors": {
+      "EHM": "machsmt.selectors.ehm.EHM — Empirical Hardness Model (random-forest regressor predicting per-solver runtime)",
+      "PWC": "machsmt.selectors.pwc.PWC — Pairwise Comparison (random-forest classifiers for each solver pair, majority vote)"
+    },
+    "ml_backend": {
+      "regressor": "sklearn.ensemble.RandomForestRegressor (via machsmt.ml.mk_regressor)",
+      "classifier": "sklearn.ensemble.RandomForestClassifier (via machsmt.ml.mk_classifier)"
+    }
+  },
+
+  "environment": {
+    "env_file": "/dcs/large/u5573765/env.sh",
+    "SMT_LARGE_STORAGE": "/dcs/large/u5573765",
+    "SMT_DATA_ROOT": "/dcs/large/u5573765/data",
+    "SMT_DB": "/dcs/large/u5573765/db/results.sqlite",
+    "SMT_Z3": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3",
+    "SMT_CVC5": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5",
+    "PATH_additions": [
+      "/dcs/large/u5573765/tools/z3-4.15.4/bin",
+      "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin"
+    ]
+  },
+
+  "benchmark_suite": {
+    "name": "suite_9k",
+    "path": "/dcs/large/u5573765/data/benchmarks/suite_9k",
+    "total_instances": 9000,
+    "QF_BV": 3000,
+    "QF_LIA": 3000,
+    "QF_NRA": 3000
+  },
+
+  "cross_validation": {
+    "method": "5-fold family-aware (sklearn.model_selection.GroupKFold)",
+    "folds_file": "shared_folds_k5.json",
+    "folds_path": "/dcs/23/u5573765/cs351/eval-machsmt/shared_folds_k5.json",
+    "shared_with": ["Grackle", "SMTgazer", "Medley"],
+    "note": "Deterministic split — no random seed needed. Paths sorted alphabetically, families sorted, GroupKFold assigns families to folds."
+  },
+
+  "machsmt_training_params": {
+    "portfolio_id": 7,
+    "timeout_s": 60,
+    "cores": "min(os.cpu_count(), 4)",
+    "min_datapoints": 3,
+    "k_fold": 5,
+    "max_score": "2 * timeout (PAR-2)",
+    "feature_extraction_timeout_per_benchmark_s": 10,
+    "thread_stack_size_mb": 64,
+    "recursion_limit": 50000,
+    "training_per_logic": true,
+    "note": "Separate MachSMT model trained per logic (QF_BV, QF_LIA, QF_NRA). Each model sees only benchmarks from its logic."
+  },
+
+  "solver_configs_in_portfolio": [
+    "cvc5::cvc5_baseline_default",
+    "cvc5::cvc5_qfnra_05_nl_cov",
+    "cvc5::cvc5_qfnra_08_decision_just",
+    "z3::z3_baseline_default",
+    "z3::z3_baseline_qfbv_sat_euf_sat",
+    "z3::z3_baseline_qflia_case_split"
+  ],
+
+  "sbatch_flags": {
+    "ehm_kfold": {
+      "partition": "tiger",
+      "cpus_per_task": 16,
+      "mem": "32G",
+      "wall_time": "04:00:00",
+      "mail_type": "END,FAIL"
+    },
+    "pwc_kfold": {
+      "partition": "tiger",
+      "cpus_per_task": 16,
+      "mem": "32G",
+      "wall_time": "04:00:00",
+      "mail_type": "END,FAIL"
+    }
+  },
+
+  "cli_invocations": {
+    "ehm_kfold_evaluation": {
+      "command": "python machsmt_kfold_evaluator.py --db /dcs/large/u5573765/db/results.sqlite --portfolio-id 7 --k-fold 5 --selector EHM --output-dir machsmt_results",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-machsmt"
+    },
+    "pwc_kfold_evaluation": {
+      "command": "python machsmt_kfold_evaluator.py --db /dcs/large/u5573765/db/results.sqlite --portfolio-id 7 --k-fold 5 --selector PWC --output-dir machsmt_results_pwc",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-machsmt"
+    },
+    "final_training_and_db_write": {
+      "command": "python machsmt_portfolio_trainer.py --db /dcs/large/u5573765/db/results.sqlite --portfolio-id 7 --write-to-db --selector-prefix machsmt_suite9k --output-dir machsmt_results",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-machsmt"
+    },
+    "submit_ehm": {
+      "command": "sbatch run_machsmt_kfold.sbatch",
+      "note": "Runs EHM k-fold CV then trains final models + writes to DB"
+    },
+    "submit_pwc": {
+      "command": "mkdir -p machsmt_results_pwc && sbatch run_machsmt_pwc.sbatch",
+      "note": "Runs PWC k-fold CV only (no DB write)"
+    }
+  },
+
+  "data_pipeline": {
+    "step_1_load": "Load all run data from SQLite (portfolio 7): instance paths, solver configs, status, runtime_ms, logic, family",
+    "step_2_parse": "Parse all 9000 benchmarks ONCE — extract AST features (file_size, num_asserts, num_vars, logic-specific counts, etc.). Per-logic CSVs written to output_dir/full_training_{LOGIC}.csv",
+    "step_3_fold": "For each fold: train selector on k-1 folds of pre-parsed benchmarks, predict on held-out fold",
+    "step_4_eval": "Evaluate predictions against VBS, SBS, CSBS, Random baselines. Compute PAR-2, solved%, regret, tail analysis"
+  },
+
+  "outputs": {
+    "ehm_results": {
+      "directory": "machsmt_results/",
+      "files": [
+        "full_training_QF_BV.csv",
+        "full_training_QF_LIA.csv",
+        "full_training_QF_NRA.csv",
+        "kfold_k5_summary.csv",
+        "kfold_per_fold_results.csv",
+        "kfold_decisions.csv",
+        "kfold_per_logic_stats.csv",
+        "machsmt_QF_BV.pkl",
+        "machsmt_QF_LIA.pkl",
+        "machsmt_QF_NRA.pkl",
+        "decisions_QF_BV.csv",
+        "decisions_QF_LIA.csv",
+        "decisions_QF_NRA.csv",
+        "decisions_all.csv",
+        "decisions_summary.csv",
+        "training_QF_BV.csv",
+        "training_QF_LIA.csv",
+        "training_QF_NRA.csv"
+      ]
+    },
+    "pwc_results": {
+      "directory": "machsmt_results_pwc/",
+      "files": [
+        "full_training_QF_BV.csv",
+        "full_training_QF_LIA.csv",
+        "full_training_QF_NRA.csv",
+        "kfold_k5_summary.csv",
+        "kfold_per_fold_results.csv",
+        "kfold_decisions.csv",
+        "kfold_per_logic_stats.csv"
+      ]
+    }
+  },
+
+  "known_issues": {
+    "pwc_min_max_bug": {
+      "file": "artifacts/machsmt/MachSMT/machsmt/selectors/pwc.py",
+      "line": 45,
+      "description": "Upstream MachSMT PWC.predict() used min() on win tallies (lower = fewer wins = worse solver). Fixed to max() so PWC selects the solver with the most pairwise wins.",
+      "fix": "Changed min(pred_dict, key=pred_dict.get) → max(pred_dict, key=pred_dict.get)"
+    },
+    "feature_extraction_timeouts": "Some deeply nested QF_BV benchmarks (asp/laby_*) hit 10s feature extraction timeout — features default to zero for those instances"
+  }
+}

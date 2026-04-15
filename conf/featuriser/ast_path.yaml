@@ -1,0 +1,5 @@
+_target_: pipeline.featurisers.ast_path.ASTPathFeaturiser
+output_type: VECTOR
+embed_dim: 128
+max_path_length: 10
+max_paths: 200

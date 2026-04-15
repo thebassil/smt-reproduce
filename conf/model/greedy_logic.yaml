@@ -1,0 +1,2 @@
+_target_: pipeline.models.greedy_logic.GreedyLogicCard
+fallback: global_best

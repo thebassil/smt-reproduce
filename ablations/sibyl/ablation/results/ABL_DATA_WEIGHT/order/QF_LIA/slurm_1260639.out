@@ -1,0 +1,74 @@
+[Wed  4 Mar 21:19:53 GMT 2026] Sibyl ablation: ABL_DATA_WEIGHT | data_weight=order | QF_LIA
+SLURM_JOB_ID=1260639
+Node: gecko-03
+GPU: NVIDIA A10
+SMT environment loaded from /dcs/large/u5573765
+======================================================================
+Sibyl Ablation Runner
+  Experiment: ABL_DATA_WEIGHT
+  Knob:       data_weight = order
+  Logic:      QF_LIA
+  Output:     /dcs/23/u5573765/cs351/smt-ablation-sibyl/ablation/results/ABL_DATA_WEIGHT/order/QF_LIA
+======================================================================
+
+  Logic: QF_LIA
+  Benchmarks: 250
+  Configs: ['z3_lia_default', 'z3_lia_arith', 'cvc5_lia_default', 'cvc5_lia_arith']
+  K-folds: 5
+
+  --- Fold 1/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=max, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=order)...
+    Evaluating on 50 benchmarks...
+    VBS:   47/50 solved, PAR-2=393.7
+    Sibyl: 45/50 solved, PAR-2=632.7
+    SBS:   47/50 solved, PAR-2=409.5
+    VBS matches: 24/50
+    Wall: 187.7s
+
+  --- Fold 2/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=max, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=order)...
+    Evaluating on 50 benchmarks...
+    VBS:   47/50 solved, PAR-2=514.6
+    Sibyl: 44/50 solved, PAR-2=782.1
+    SBS:   47/50 solved, PAR-2=537.6
+    VBS matches: 21/50
+    Wall: 187.5s
+
+  --- Fold 3/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=max, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=order)...
+    Evaluating on 50 benchmarks...
+    VBS:   49/50 solved, PAR-2=142.0
+    Sibyl: 47/50 solved, PAR-2=426.5
+    SBS:   49/50 solved, PAR-2=192.6
+    VBS matches: 33/50
+    Wall: 188.8s
+
+  --- Fold 4/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=max, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=order)...
+    Evaluating on 50 benchmarks...
+    VBS:   49/50 solved, PAR-2=182.7
+    Sibyl: 47/50 solved, PAR-2=456.5
+    SBS:   49/50 solved, PAR-2=235.3
+    VBS matches: 18/50
+    Wall: 188.7s
+
+  --- Fold 5/5: train=200, val=50 ---
+    Training (epochs=5, t=1, dropout=0.1, pool=max, edges=['AST', 'Back-AST', 'Data'], mode=cat, jump=True, weight=order)...
+    Evaluating on 50 benchmarks...
+    VBS:   48/50 solved, PAR-2=335.7
+    Sibyl: 48/50 solved, PAR-2=410.3
+    SBS:   47/50 solved, PAR-2=469.8
+    VBS matches: 22/50
+    Wall: 186.0s
+
+  Wrote: /dcs/23/u5573765/cs351/smt-ablation-sibyl/ablation/results/ABL_DATA_WEIGHT/order/QF_LIA/perfold.csv
+  Wrote: /dcs/23/u5573765/cs351/smt-ablation-sibyl/ablation/results/ABL_DATA_WEIGHT/order/QF_LIA/summary.csv
+
+======================================================================
+SUMMARY: ABL_DATA_WEIGHT | data_weight=order | QF_LIA
+  Sibyl: 231/250 solved (92.4%), PAR-2=2708.1
+  vs SBS: -46.8%
+  Closeness to VBS: -312.9%
+  Wall time: 939s
+======================================================================
+[Wed  4 Mar 21:35:32 GMT 2026] Done.

@@ -1,0 +1,51 @@
+experiment_code: smac_n_trials_25
+ablation_knob: smac_n_trials
+ablation_value: 25
+algorithmic:
+  cluster_num: 10
+  portfolio_size: 4
+  seed: 42
+  smac_n_trials: 25
+  smac_w1: 0.5
+  kmeans_n_init: 10
+  smac_internal_cv_splits: 3
+hardware:
+  partition: tiger
+  cpus_per_task: 32
+  mem_per_cpu_mb: 3000
+  wall_time: '48:00:00'
+  smac_workers: 1
+  feature_workers: 32
+convention:
+  timeout_s: 60
+  par2_penalty: 120
+  k_folds: 5
+  portfolio_id: 7
+  suite_name: suite_9k
+  folds_file: shared_folds_k5.json
+  logics:
+  - QF_BV
+  - QF_LIA
+  - QF_NRA
+  config_ids:
+  - 109
+  - 112
+  - 114
+  - 115
+  - 116
+  - 118
+  solver_list:
+  - cvc5::cvc5_qfnra_05_nl_cov
+  - cvc5::cvc5_qfnra_08_decision_just
+  - z3::z3_baseline_default
+  - cvc5::cvc5_baseline_default
+  - z3::z3_baseline_qflia_case_split
+  - z3::z3_baseline_qfbv_sat_euf_sat
+paths:
+  artifact_dir: /dcs/23/u5573765/cs351/smt-small-sbs-smtgazer/artifacts/smtgazer/SMTGazer
+  results_base: /dcs/large/u5573765/ablation_results/smtgazer
+  main_workdir: /dcs/large/u5573765/smtgazer_workdir
+  db_path: /dcs/large/u5573765/db/results.sqlite
+  folds_path: /dcs/23/u5573765/cs351/eval-smtgazer/shared_folds_k5.json
+  benchmark_base: /dcs/large/u5573765/data/benchmarks/suite_9k
+  env_file: /dcs/large/u5573765/env.sh

@@ -1,0 +1,4 @@
+_target_: pipeline.policies.inverse_runtime_proportional.InverseRuntimeProportionalPolicy
+decision_type: schedule
+k: 3
+min_fraction: 0.05

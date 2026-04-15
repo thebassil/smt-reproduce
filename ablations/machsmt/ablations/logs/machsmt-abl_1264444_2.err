@@ -1,0 +1,100 @@
+/dcs/23/u5573765/.local/lib/python3.9/site-packages/torch/__init__.py:1236: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+Fatal Python error: _Py_CheckRecursiveCall: Cannot recover from stack overflow.
+Python runtime state: initialized
+
+Thread 0x000015349de7f640 (most recent call first):
+  File "/usr/lib64/python3.9/threading.py", line 1080 in _wait_for_tstate_lock
+  File "/usr/lib64/python3.9/threading.py", line 1064 in join
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/StoppableThread.py", line 126 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Current thread 0x000015350777f640 (most recent call first):
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/exceptions.py", line 76 in getMsg
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/exceptions.py", line 52 in __init__
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 94 in __init__
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 68 in funcwrap
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x0000153553c72640 (most recent call first):
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 576 in _handle_results
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x0000153553e73640 (most recent call first):
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 528 in _handle_tasks
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000015355346e640 (most recent call first):
+  File "/usr/lib64/python3.9/selectors.py", line 416 in select
+  File "/usr/lib64/python3.9/multiprocessing/connection.py", line 935 in wait
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 499 in _wait_for_updates
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 519 in _handle_workers
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x0000153554074640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 36 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/database/db.py", line 13 in process_benchmark
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x0000153553a71640 (most recent call first):
+  File "/usr/lib64/python3.9/threading.py", line 1080 in _wait_for_tstate_lock
+  File "/usr/lib64/python3.9/threading.py", line 1064 in join
+  File "/dcs/23/u5573765/.local/lib/python3.9/site-packages/func_timeout/dafunc.py", line 100 in func_timeout
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 75 in compute_core_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 48 in compute_features
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 120 in parse
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/database/db.py", line 13 in process_benchmark
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x000015355366f640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 71 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/database/db.py", line 13 in process_benchmark
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x0000153553870640 (most recent call first):
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 31 in tokenize
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/tokenize_sexpr.py", line 15 in __next__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in <listcomp>
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/benchmark/benchmark.py", line 114 in parse
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/database/db.py", line 13 in process_benchmark
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 125 in worker
+  File "/usr/lib64/python3.9/threading.py", line 917 in run
+  File "/usr/lib64/python3.9/threading.py", line 980 in _bootstrap_inner
+  File "/usr/lib64/python3.9/threading.py", line 937 in _bootstrap
+
+Thread 0x00001536523e7e00 (most recent call first):
+  File "/usr/lib64/python3.9/threading.py", line 312 in wait
+  File "/usr/lib64/python3.9/multiprocessing/pool.py", line 858 in next
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/database/db.py", line 94 in build
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/database/db.py", line 20 in __init__
+  File "/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/machsmt.py", line 25 in __init__
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 482 in _train_logic
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 248 in run
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 751 in cmd_run
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 819 in main
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 827 in <module>
+/var/spool/slurmd/job1266734/slurm_script: line 31: 100613 Aborted                 (core dumped) python /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py run "$YAML" --execute

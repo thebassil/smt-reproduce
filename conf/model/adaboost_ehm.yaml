@@ -1,0 +1,6 @@
+_target_: pipeline.models.adaboost_ehm.AdaBoostEHM
+input_type: VECTOR
+output_type: scores
+n_estimators: 200
+loss: exponential
+learning_rate: 1.0

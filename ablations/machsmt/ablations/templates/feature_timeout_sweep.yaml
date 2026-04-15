@@ -1,0 +1,27 @@
+experiment:
+  code: "ABL-FT01"
+  hypothesis: "Longer feature extraction timeout may capture richer features for complex benchmarks"
+
+reference:
+  ml_core: scikit
+  pwc: false
+  greedy: true
+  logic_filter: false
+  k: 5
+  min_datapoints: 3
+  max_score: 120
+  rng: 42
+  feature_timeout: 10
+  cores: 4
+  par_n: 2
+  use_gpu: false
+
+ablation:
+  knob: "feature_timeout"
+  values: [5, 10, 30]
+
+execution:
+  suite_name: "suite_9k"
+  portfolio_id: 7
+  timeout_s: 60
+  logics: [QF_BV, QF_LIA, QF_NRA]

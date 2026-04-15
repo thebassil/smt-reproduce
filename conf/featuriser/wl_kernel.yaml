@@ -1,0 +1,4 @@
+_target_: pipeline.featurisers.wl_kernel.WLKernel
+output_type: VECTOR
+wl_depth: 3
+bucket_size: 1024

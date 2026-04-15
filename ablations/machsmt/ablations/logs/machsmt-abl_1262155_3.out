@@ -1,0 +1,154 @@
+SMT environment loaded from /dcs/large/u5573765
+=== Task 3: /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablations/templates/logic_filter_toggle.yaml ===
+Experiment: ABL-LF01
+  Knob: logic_filter
+  Values: [False, True]
+  Reference logic_filter=False
+  Suite: suite_9k, Portfolio: 7
+  Logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+  K-fold: 5
+======================================================================
+Experiment: ABL-LF01
+  Knob: logic_filter
+  Values: [False, True]
+  Logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+======================================================================
+Loaded 9000 benchmarks from suite_9k
+Filtered to 9000 benchmarks for logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+
+============================================================
+Variant 0: logic_filter=False
+  k-fold=5
+============================================================
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 0 QF_BV: avg_par2=120.000, solved=0/702 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 0 QF_LIA: avg_par2=120.000, solved=0/575 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 0 QF_NRA: avg_par2=120.000, solved=0/882 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 1 QF_BV: avg_par2=120.000, solved=0/550 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 1 QF_LIA: avg_par2=120.000, solved=0/541 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 1 QF_NRA: avg_par2=120.000, solved=0/512 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 2 QF_BV: avg_par2=120.000, solved=0/556 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 2 QF_LIA: avg_par2=120.000, solved=0/649 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 2 QF_NRA: avg_par2=120.000, solved=0/480 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 3 QF_BV: avg_par2=120.000, solved=0/589 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 3 QF_LIA: avg_par2=120.000, solved=0/647 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 3 QF_NRA: avg_par2=120.000, solved=0/544 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 4 QF_BV: avg_par2=120.000, solved=0/603 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 4 QF_LIA: avg_par2=120.000, solved=0/588 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 4 QF_NRA: avg_par2=120.000, solved=0/582 (0.0%)
+
+============================================================
+Variant 1: logic_filter=True
+  k-fold=5
+============================================================
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 0 QF_BV: avg_par2=120.000, solved=0/702 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 0 QF_LIA: avg_par2=120.000, solved=0/575 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 0 QF_NRA: avg_par2=120.000, solved=0/882 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 1 QF_BV: avg_par2=120.000, solved=0/550 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 1 QF_LIA: avg_par2=120.000, solved=0/541 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 1 QF_NRA: avg_par2=120.000, solved=0/512 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 2 QF_BV: avg_par2=120.000, solved=0/556 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 2 QF_LIA: avg_par2=120.000, solved=0/649 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 2 QF_NRA: avg_par2=120.000, solved=0/480 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 3 QF_BV: avg_par2=120.000, solved=0/589 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 3 QF_LIA: avg_par2=120.000, solved=0/647 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 3 QF_NRA: avg_par2=120.000, solved=0/544 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 4 QF_BV: avg_par2=120.000, solved=0/603 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 4 QF_LIA: avg_par2=120.000, solved=0/588 (0.0%)
+    WARNING: Training failed: __init__() missing 1 required positional argument: 'data'
+  Fold 4 QF_NRA: avg_par2=120.000, solved=0/582 (0.0%)
+
+Experiment ABL-LF01 completed.
+  Runs CSV:    /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablations/results/ABL-LF01_runs.csv
+  Summary CSV: /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablations/results/ABL-LF01_summary.csv
+
+# Ablation Report: ABL-LF01
+
+**Hypothesis**: Logic-filtered models may improve accuracy by removing irrelevant solver configs
+**Knob**: logic_filter
+**Values**: [False, True]
+
+## QF_BV
+
+| Variant | Value | Mean PAR-2 | Std PAR-2 | Solve Rate | Folds | Delta vs Ref |
+|---------|-------|------------|-----------|------------|-------|--------------|
+| 0 | False | 120.0 | 0.0 | 0.0% | 5 | 0.0000 |
+| 1 | True | 120.0 | 0.0 | 0.0% | 5 | 0.0000 |
+
+## QF_LIA
+
+| Variant | Value | Mean PAR-2 | Std PAR-2 | Solve Rate | Folds | Delta vs Ref |
+|---------|-------|------------|-----------|------------|-------|--------------|
+| 0 | False | 120.0 | 0.0 | 0.0% | 5 | 0.0000 |
+| 1 | True | 120.0 | 0.0 | 0.0% | 5 | 0.0000 |
+
+## QF_NRA
+
+| Variant | Value | Mean PAR-2 | Std PAR-2 | Solve Rate | Folds | Delta vs Ref |
+|---------|-------|------------|-----------|------------|-------|--------------|
+| 0 | False | 120.0 | 0.0 | 0.0% | 5 | 0.0000 |
+| 1 | True | 120.0 | 0.0 | 0.0% | 5 | 0.0000 |
+
+## Per-Fold Details
+
+| Variant | Value | Fold | Logic | Instances | Avg PAR-2 | Solved | Solve Rate |
+|---------|-------|------|-------|-----------|-----------|--------|------------|
+| 0 | False | 0 | QF_BV | 702 | 120.0 | 0 | 0.0% |
+| 0 | False | 0 | QF_LIA | 575 | 120.0 | 0 | 0.0% |
+| 0 | False | 0 | QF_NRA | 882 | 120.0 | 0 | 0.0% |
+| 0 | False | 1 | QF_BV | 550 | 120.0 | 0 | 0.0% |
+| 0 | False | 1 | QF_LIA | 541 | 120.0 | 0 | 0.0% |
+| 0 | False | 1 | QF_NRA | 512 | 120.0 | 0 | 0.0% |
+| 0 | False | 2 | QF_BV | 556 | 120.0 | 0 | 0.0% |
+| 0 | False | 2 | QF_LIA | 649 | 120.0 | 0 | 0.0% |
+| 0 | False | 2 | QF_NRA | 480 | 120.0 | 0 | 0.0% |
+| 0 | False | 3 | QF_BV | 589 | 120.0 | 0 | 0.0% |
+| 0 | False | 3 | QF_LIA | 647 | 120.0 | 0 | 0.0% |
+| 0 | False | 3 | QF_NRA | 544 | 120.0 | 0 | 0.0% |
+| 0 | False | 4 | QF_BV | 603 | 120.0 | 0 | 0.0% |
+| 0 | False | 4 | QF_LIA | 588 | 120.0 | 0 | 0.0% |
+| 0 | False | 4 | QF_NRA | 582 | 120.0 | 0 | 0.0% |
+| 1 | True | 0 | QF_BV | 702 | 120.0 | 0 | 0.0% |
+| 1 | True | 0 | QF_LIA | 575 | 120.0 | 0 | 0.0% |
+| 1 | True | 0 | QF_NRA | 882 | 120.0 | 0 | 0.0% |
+| 1 | True | 1 | QF_BV | 550 | 120.0 | 0 | 0.0% |
+| 1 | True | 1 | QF_LIA | 541 | 120.0 | 0 | 0.0% |
+| 1 | True | 1 | QF_NRA | 512 | 120.0 | 0 | 0.0% |
+| 1 | True | 2 | QF_BV | 556 | 120.0 | 0 | 0.0% |
+| 1 | True | 2 | QF_LIA | 649 | 120.0 | 0 | 0.0% |
+| 1 | True | 2 | QF_NRA | 480 | 120.0 | 0 | 0.0% |
+| 1 | True | 3 | QF_BV | 589 | 120.0 | 0 | 0.0% |
+| 1 | True | 3 | QF_LIA | 647 | 120.0 | 0 | 0.0% |
+| 1 | True | 3 | QF_NRA | 544 | 120.0 | 0 | 0.0% |
+| 1 | True | 4 | QF_BV | 603 | 120.0 | 0 | 0.0% |
+| 1 | True | 4 | QF_LIA | 588 | 120.0 | 0 | 0.0% |
+| 1 | True | 4 | QF_NRA | 582 | 120.0 | 0 | 0.0% |
+

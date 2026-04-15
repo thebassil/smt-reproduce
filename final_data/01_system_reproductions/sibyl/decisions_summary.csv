@@ -1,0 +1,4 @@
+logic,total,cvc5_baseline_default,cvc5_qfnra_05_nl_cov,cvc5_qfnra_08_decision_just,z3_baseline_qfbv_sat_euf_sat,z3_baseline_qflia_case_split
+QF_BV,2944,504 (17.1%),769 (26.1%),661 (22.5%),272 (9.2%),738 (25.1%)
+QF_LIA,3000,116 (3.9%),814 (27.1%),-,692 (23.1%),1378 (45.9%)
+QF_NRA,2967,21 (0.7%),768 (25.9%),293 (9.9%),145 (4.9%),1740 (58.6%)

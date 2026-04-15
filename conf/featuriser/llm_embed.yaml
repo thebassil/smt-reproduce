@@ -1,0 +1,4 @@
+_target_: pipeline.featurisers.llm_embed.LLMEmbedFeaturiser
+output_type: VECTOR
+model_name: "microsoft/codebert-base"
+max_length: 512

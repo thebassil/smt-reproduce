@@ -1,0 +1,8 @@
+defaults:
+  - transformer_embed
+
+_target_: pipeline.featurisers.transformer_embed.TransformerEmbedFeaturiser
+output_type: VECTOR
+embed_dim: 128
+n_layers: 4
+n_heads: 8

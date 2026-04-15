@@ -1,0 +1,19 @@
+{
+  "experiment_code": "ABL_POOL_TYPE",
+  "knob": "pool_type",
+  "values": [
+    "attention",
+    "max",
+    "mean",
+    "add"
+  ],
+  "logics": [
+    "QF_BV",
+    "QF_LIA",
+    "QF_NRA"
+  ],
+  "reference_value": "attention",
+  "submitted_at": "2026-03-16T15:11:15.166357+00:00",
+  "jobs": [],
+  "dry_run": true
+}

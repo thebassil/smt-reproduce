@@ -1,0 +1,10 @@
+experiment: runner_timeout
+description: "Effect of per-instance solver cutoff on portfolio quality"
+knob: runner_timeout
+fly_key: trains.runner.timeout
+reference_value: 30
+values:
+  - 10
+  - 30
+  - 60
+wall_time_override: null

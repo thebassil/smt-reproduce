@@ -1,0 +1,6 @@
+_target_: pipeline.models.meta_learning.MetaLearningCard
+hidden_dim: 64
+inner_lr: 0.01
+outer_lr: 0.001
+inner_steps: 5
+epochs: 50

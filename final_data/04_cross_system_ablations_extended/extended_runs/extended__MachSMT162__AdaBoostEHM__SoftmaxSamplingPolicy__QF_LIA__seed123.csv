@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SoftmaxSamplingPolicy,QF_LIA,123,0,15258.21,81.0,1.7004,82.5,19.6,2400.0,600.0,1301809,74
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SoftmaxSamplingPolicy,QF_LIA,123,1,18113.16,76.7,2.7560,79.2,18.2,2400.0,600.0,1301809,74
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SoftmaxSamplingPolicy,QF_LIA,123,2,13115.88,83.7,1.5289,77.4,18.4,2400.0,600.0,1301809,74
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SoftmaxSamplingPolicy,QF_LIA,123,3,14871.15,81.5,1.1695,75.0,20.8,2400.0,600.0,1301809,74
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SoftmaxSamplingPolicy,QF_LIA,123,4,16548.70,79.5,1.5995,79.7,18.1,2400.0,600.0,1301809,74
+extended,REF-VECTOR,MachSMT162,AdaBoostEHM,SoftmaxSamplingPolicy,QF_LIA,123,MEAN,15581.42,80.5,-549.8127,488.8,,,,1301809,74

@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.graph_subgraph_pool.SubgraphPoolFeaturiser
+output_type: GRAPH

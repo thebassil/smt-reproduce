@@ -1,0 +1,4 @@
+_target_: pipeline.policies.presolver_then_select.PresolverThenSelectPolicy
+decision_type: schedule
+presolver_config: z3_baseline_default
+fraction: 0.1

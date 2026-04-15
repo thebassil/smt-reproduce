@@ -1,0 +1,160 @@
+{
+  "experiment": "Grackle Portfolio Construction — O4 Evaluation",
+  "date": "2026-03-03",
+  "cluster": "DCS HPC, tiger partition",
+  "slurm_job_id": 1258871,
+
+  "solvers": {
+    "cvc5": {
+      "version": "1.3.2",
+      "binary": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5"
+    },
+    "z3": {
+      "version": "4.15.4",
+      "binary": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3"
+    }
+  },
+
+  "software": {
+    "python": "3.9.25",
+    "grackle": "0.1 (dev install from /dcs/23/u5573765/cs351/small-sbs-grackle/artifacts/grackle)",
+    "grackle_source_commit": "78d72d6ac42870d780f63f649e26b9ab88d2622f",
+    "eval_repo_commit": "d0fd16c21339a19f2ba33d2e64d0c3aed8c31743",
+    "eval_repo_branch": "eval/suite9k-grackle",
+    "trainer": "ParamILS (grackle.trainer.cvc5.paramils.Cvc5ParamilsTrainer / grackle.trainer.z3.paramils.Z3ParamilsTrainer)",
+    "runner_cvc5": "grackle.runner.cvc5.Cvc5Runner",
+    "runner_z3": "grackle.runner.z3.Z3Runner"
+  },
+
+  "environment": {
+    "env_file": "/dcs/large/u5573765/env.sh",
+    "PYPROVE_BENCHMARKS": "/dcs/large/u5573765/data/benchmarks/suite_9k",
+    "SMT_Z3": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3",
+    "SMT_CVC5": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5",
+    "SMT_LARGE_STORAGE": "/dcs/large/u5573765",
+    "SMT_DATA_ROOT": "/dcs/large/u5573765/data",
+    "SMT_DB": "/dcs/large/u5573765/db/results.sqlite",
+    "PATH_additions": [
+      "/dcs/large/u5573765/tools/z3-4.15.4/bin",
+      "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin"
+    ]
+  },
+
+  "benchmark_suite": {
+    "name": "suite_9k",
+    "path": "/dcs/large/u5573765/data/benchmarks/suite_9k",
+    "total_instances": 9000,
+    "QF_BV": 3000,
+    "QF_LIA": 3000,
+    "QF_NRA": 3000
+  },
+
+  "cross_validation": {
+    "method": "5-fold",
+    "folds_file": "shared_folds_k5.json",
+    "folds_path": "/dcs/23/u5573765/cs351/eval-grackle/shared_folds_k5.json",
+    "shared_with": ["MachSMT", "SMTgazer", "Medley"]
+  },
+
+  "grackle_training_params": {
+    "grackle_timeout_s": 43200,
+    "solver_timeout_per_instance_s": 30,
+    "paramils_iteration_timeout_s": 3600,
+    "paramils_restarts": true,
+    "penalty_for_timeout": 100000000,
+    "penalty_sat": false,
+    "penalty_unknown": 100000000,
+    "cores": 4,
+    "tops": 8,
+    "best": 1,
+    "rank": 1,
+    "atavistic": false,
+    "selection": "default"
+  },
+
+  "sbatch_flags": {
+    "partition": "tiger",
+    "cpus_per_task": 4,
+    "mem_per_cpu": "3000 MB",
+    "total_memory": "12000 MB",
+    "wall_time": "14:00:00",
+    "array": "0-5",
+    "mail_type": "END,FAIL,TIME_LIMIT_80"
+  },
+
+  "cli_invocations": {
+    "training": {
+      "command": "fly-grackle.py <FLY_FILE>",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-grackle/grackle_runs/<RUN_DIR>",
+      "example": "cd /dcs/23/u5573765/cs351/eval-grackle/grackle_runs/cvc5_qfbv && fly-grackle.py cvc5_qfbv.fly"
+    },
+    "evaluation": {
+      "command": "python3 grackle_cli_evaluator.py --runs-dir grackle_runs --folds shared_folds_k5.json --output-dir grackle_results --timeout 30",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-grackle"
+    },
+    "kfold_evaluation": {
+      "command": "python3 grackle_kfold_evaluator.py --shared-folds shared_folds_k5.json --output-dir grackle_results",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-grackle"
+    },
+    "submit_command": "cd grackle_runs && TRAIN_JOB=$(sbatch --parsable run_grackle.sbatch) && sbatch --dependency=afterok:${TRAIN_JOB} eval_grackle.sbatch"
+  },
+
+  "runs": {
+    "0_cvc5_qfbv": {
+      "fly_file": "cvc5_qfbv.fly",
+      "seeds": ["cvc5_default", "cvc5_nl_cov", "cvc5_decision_just"],
+      "benchmark_list": "benchmarks_QF_BV.txt",
+      "runner": "grackle.runner.cvc5.Cvc5Runner",
+      "trainer": "grackle.trainer.cvc5.paramils.Cvc5ParamilsTrainer",
+      "configs_found": 5,
+      "status": "completed (2 OOM sub-events)"
+    },
+    "1_cvc5_qflia": {
+      "fly_file": "cvc5_qflia.fly",
+      "seeds": ["cvc5_default", "cvc5_nl_cov", "cvc5_decision_just"],
+      "benchmark_list": "benchmarks_QF_LIA.txt",
+      "runner": "grackle.runner.cvc5.Cvc5Runner",
+      "trainer": "grackle.trainer.cvc5.paramils.Cvc5ParamilsTrainer",
+      "configs_found": 4,
+      "status": "timed out at 14h wall limit (partial — was mid-iteration)"
+    },
+    "2_cvc5_qfnra": {
+      "fly_file": "cvc5_qfnra.fly",
+      "seeds": ["cvc5_default", "cvc5_nl_cov", "cvc5_decision_just"],
+      "benchmark_list": "benchmarks_QF_NRA.txt",
+      "runner": "grackle.runner.cvc5.Cvc5Runner",
+      "trainer": "grackle.trainer.cvc5.paramils.Cvc5ParamilsTrainer",
+      "configs_found": 6,
+      "status": "completed"
+    },
+    "3_z3_qfbv": {
+      "fly_file": "z3_qfbv.fly",
+      "seeds": ["z3_default", "z3_case_split", "z3_sat_euf"],
+      "benchmark_list": "benchmarks_QF_BV.txt",
+      "runner": "grackle.runner.z3.Z3Runner",
+      "trainer": "grackle.trainer.z3.paramils.Z3ParamilsTrainer",
+      "configs_found": 5,
+      "status": "completed"
+    },
+    "4_z3_qflia": {
+      "fly_file": "z3_qflia.fly",
+      "seeds": ["z3_default", "z3_case_split", "z3_sat_euf"],
+      "benchmark_list": "benchmarks_QF_LIA.txt",
+      "runner": "grackle.runner.z3.Z3Runner",
+      "trainer": "grackle.trainer.z3.paramils.Z3ParamilsTrainer",
+      "configs_found": 5,
+      "status": "completed"
+    },
+    "5_z3_qfnra": {
+      "fly_file": "z3_qfnra.fly",
+      "seeds": ["z3_default", "z3_case_split", "z3_sat_euf"],
+      "benchmark_list": "benchmarks_QF_NRA.txt",
+      "runner": "grackle.runner.z3.Z3Runner",
+      "trainer": "grackle.trainer.z3.paramils.Z3ParamilsTrainer",
+      "configs_found": 6,
+      "status": "completed"
+    }
+  },
+
+  "total_configs_discovered": 31
+}

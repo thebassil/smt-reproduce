@@ -1,0 +1,16 @@
+# Ablation: Training sample weighting
+# Knob:    data_weight
+# Class:   algorithmic
+# Reference value: best
+
+experiment_code: ABL_DATA_WEIGHT
+knob: data_weight
+description: >
+  How training samples are weighted. 'best' weights by best-solver
+  runtime gap; 'order' weights by solver ordering; 'none' uses
+  uniform weighting.
+
+values:
+  - best           # ← reference
+  - order
+  - none

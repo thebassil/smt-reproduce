@@ -1,0 +1,17 @@
+# Ablation: Dropout rate
+# Knob:    dropout
+# Class:   algorithmic
+# Reference value: 0
+
+experiment_code: ABL_DROPOUT
+knob: dropout
+description: >
+  Dropout probability applied to FC layers. Higher values
+  regularise more aggressively. Production used 0 (smtTrainer.py default).
+
+values:
+  - 0             # ← reference
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.5

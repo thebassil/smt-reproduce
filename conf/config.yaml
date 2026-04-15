@@ -1,0 +1,18 @@
+# Top-level Hydra config for cross-system ablation runner.
+defaults:
+  - reference: ref_vector   # override with ref_gnn for GNN reference system
+  - _self_
+
+seed: 42
+
+data:
+  db_path: ${oc.env:SMT_DB_PATH,./data/results.sqlite}
+  shard_db: null              # set via CLI for shard mode: data.shard_db=/path/to/shard.sqlite
+  suite_name: final_suite
+  portfolio_id: 7             # baseline_4cfg_v1
+  logic: QF_LIA
+  timeout_s: 60.0
+
+k_folds: 5
+
+# experiment_id: null          # set via CLI to enable DB writes: +experiment_id=N

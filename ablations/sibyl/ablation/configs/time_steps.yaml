@@ -1,0 +1,17 @@
+# Ablation: GNN message-passing time steps
+# Knob:    time_steps
+# Class:   algorithmic
+# Reference value: 2
+
+experiment_code: ABL_TIME_STEPS
+knob: time_steps
+description: >
+  Number of GATv2Conv message-passing rounds. Controls how far
+  information propagates through the AST graph. 0 = no message
+  passing (pooling over raw node features only).
+
+values:
+  - 0
+  - 1
+  - 2             # ← reference
+  - 3

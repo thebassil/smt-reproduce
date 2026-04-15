@@ -1,0 +1,11 @@
+experiment: tops
+description: "Effect of strategy pool size on portfolio quality"
+knob: tops
+fly_key: tops
+reference_value: 8
+values:
+  - 4
+  - 8
+  - 16
+  - 32
+wall_time_override: null

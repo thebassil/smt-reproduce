@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.hypergraph_features.HypergraphFeatures
+output_type: VECTOR

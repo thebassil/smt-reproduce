@@ -1,0 +1,33 @@
+experiment:
+  code: "ABL-MDY-T01"
+  name: "Timeout Manager Strategy"
+  hypothesis: "expo timeout manager provides best time budget allocation across solvers"
+
+reference:
+  classifier: neighbor
+  timeout_manager: expo
+  feature_setting: bow
+  timeout: 60
+  seed: 42
+  k: 10
+  time_k: 40
+  epsilon: 0.9
+  epsilon_decay: 0.9
+  gamma: 0.07
+  confidence: 0.95
+  reward: bump
+  kind: full
+  extra: true
+  set_lambda: 0
+  set_const: 0
+
+ablation:
+  flag: "timeout_manager"
+  values: [expo, const, nearest, sgd]
+
+execution:
+  k_fold: 5
+  folds_file: "shared_folds_k5.json"
+  suite_name: suite_9k
+  portfolio_id: 7
+  logics: [QF_BV, QF_LIA, QF_NRA]
