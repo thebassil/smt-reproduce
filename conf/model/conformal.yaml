@@ -1,0 +1,3 @@
+_target_: pipeline.models.conformal.ConformalCard
+alpha: 0.1
+base_model: ridge

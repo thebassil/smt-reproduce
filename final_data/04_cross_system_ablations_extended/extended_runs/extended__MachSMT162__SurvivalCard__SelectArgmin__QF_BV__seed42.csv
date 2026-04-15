@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,MachSMT162,SurvivalCard,SelectArgmin,QF_BV,42,0,26652.12,64.7,1.3199,723.6,128.1,2400.0,600.0,1299621,97
+extended,REF-VECTOR,MachSMT162,SurvivalCard,SelectArgmin,QF_BV,42,1,27704.87,63.5,1.4949,634.2,203.3,2400.0,600.0,1299621,97
+extended,REF-VECTOR,MachSMT162,SurvivalCard,SelectArgmin,QF_BV,42,2,27131.72,63.7,1.6215,727.3,116.5,2400.0,600.0,1299621,97
+extended,REF-VECTOR,MachSMT162,SurvivalCard,SelectArgmin,QF_BV,42,3,27619.81,63.3,1.4037,643.9,199.2,2400.0,600.0,1299621,97
+extended,REF-VECTOR,MachSMT162,SurvivalCard,SelectArgmin,QF_BV,42,4,29560.97,60.8,1.6454,652.0,192.4,2400.0,600.0,1299621,97
+extended,REF-VECTOR,MachSMT162,SurvivalCard,SelectArgmin,QF_BV,42,MEAN,27733.90,63.2,-284.7685,4220.6,,,,1299621,97

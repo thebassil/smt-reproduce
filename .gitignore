@@ -1,0 +1,14 @@
+data/
+*.egg-info/
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+outputs/
+results_csv/
+**/*.sqlite
+ablations/*/ablations/logs/
+ablations/*/ablations/results/
+**/*.err
+**/*.out

@@ -1,0 +1,6 @@
+defaults:
+  - ast_path
+
+_target_: pipeline.featurisers.ast_path.ASTPathFeaturiser
+output_type: VECTOR
+max_path_length: 10

@@ -1,0 +1,6 @@
+defaults:
+  - static_light_bow
+
+_target_: pipeline.featurisers.static_light_bow.StaticLightBoW
+output_type: VECTOR
+mode: binary

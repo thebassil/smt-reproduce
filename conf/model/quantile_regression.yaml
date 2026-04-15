@@ -1,0 +1,3 @@
+_target_: pipeline.models.quantile_regression.QuantileRegressionCard
+quantile: 0.1
+n_estimators: 200

@@ -1,0 +1,5 @@
+_target_: pipeline.models.neural_processes.NeuralProcessCard
+hidden_dim: 64
+latent_dim: 32
+lr: 0.001
+epochs: 100

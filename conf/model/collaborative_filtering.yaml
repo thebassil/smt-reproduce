@@ -1,0 +1,3 @@
+_target_: pipeline.models.collaborative_filtering.CollaborativeFilteringCard
+n_factors: 20
+method: nmf

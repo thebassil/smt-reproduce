@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,HypergraphFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,0,17014.07,77.8,0.4810,1118.3,248.3,2400.0,600.0,1299622,61
+extended,REF-VECTOR,HypergraphFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,1,16492.46,78.8,0.4852,1098.3,282.5,2400.0,600.0,1299622,61
+extended,REF-VECTOR,HypergraphFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,2,15293.77,80.5,0.4777,1157.2,200.2,2400.0,600.0,1299622,61
+extended,REF-VECTOR,HypergraphFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,3,18171.89,75.8,0.5814,1055.6,302.2,2400.0,600.0,1299622,61
+extended,REF-VECTOR,HypergraphFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,4,16328.74,78.7,0.4612,1038.0,317.7,2400.0,600.0,1299622,61
+extended,REF-VECTOR,HypergraphFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,MEAN,16660.19,78.3,-27.2999,6818.2,,,,1299622,61

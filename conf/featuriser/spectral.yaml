@@ -1,0 +1,3 @@
+_target_: pipeline.featurisers.spectral_features.SpectralFeatures
+output_type: VECTOR
+n_eigenvalues: 5

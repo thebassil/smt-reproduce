@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,MachSMT162,ContextualBanditsCard,SelectArgmin,QF_BV,42,0,20399.14,73.5,0.7756,741.7,131.1,2400.0,600.0,1299621,19
+extended,REF-VECTOR,MachSMT162,ContextualBanditsCard,SelectArgmin,QF_BV,42,1,22550.43,71.0,1.0307,654.9,207.5,2400.0,600.0,1299621,19
+extended,REF-VECTOR,MachSMT162,ContextualBanditsCard,SelectArgmin,QF_BV,42,2,19480.61,75.0,0.8823,744.9,119.7,2400.0,600.0,1299621,19
+extended,REF-VECTOR,MachSMT162,ContextualBanditsCard,SelectArgmin,QF_BV,42,3,21935.91,71.3,0.9090,660.2,205.0,2400.0,600.0,1299621,19
+extended,REF-VECTOR,MachSMT162,ContextualBanditsCard,SelectArgmin,QF_BV,42,4,22824.37,70.5,1.0425,669.5,197.4,2400.0,600.0,1299621,19
+extended,REF-VECTOR,MachSMT162,ContextualBanditsCard,SelectArgmin,QF_BV,42,MEAN,21438.09,72.3,-135.4728,4332.0,,,,1299621,19

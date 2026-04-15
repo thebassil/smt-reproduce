@@ -1,0 +1,6 @@
+defaults:
+  - structural_width
+
+_target_: pipeline.featurisers.structural_width.StructuralWidth
+output_type: VECTOR
+method: approx

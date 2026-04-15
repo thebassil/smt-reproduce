@@ -1,0 +1,217 @@
+{
+  "experiment": "SMTGazer Portfolio Selector — O4 Evaluation",
+  "date": "2026-03-03",
+  "cluster": "DCS HPC, tiger partition",
+
+  "solvers": {
+    "cvc5": {
+      "version": "1.3.2",
+      "binary": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5"
+    },
+    "z3": {
+      "version": "4.15.4",
+      "binary": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3"
+    }
+  },
+
+  "software": {
+    "python": "3.9.25",
+    "smtgazer_artifact": "SMTGazer original artifact (not pip-installable)",
+    "smtgazer_artifact_path": "/dcs/23/u5573765/cs351/smt-small-sbs-smtgazer/artifacts/smtgazer/SMTGazer",
+    "smtgazer_source_commit": "d4ff99189e0c2acbc3302a7302bd7f3a2810355b",
+    "smac3": "custom patched SMAC3 (bundled in artifact at SMTGazer/smac/)",
+    "machfea": "machsmt benchmark feature extractor (bundled in artifact at SMTGazer/machfea/)",
+    "sklearn": "KMeans from scikit-learn (system install)",
+    "eval_repo_commit": "d0fd16c21339a19f2ba33d2e64d0c3aed8c31743",
+    "eval_repo_branch": "eval/suite9k-smtgazer"
+  },
+
+  "environment": {
+    "env_file": "/dcs/large/u5573765/env.sh",
+    "SMT_Z3": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3",
+    "SMT_CVC5": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5",
+    "SMT_LARGE_STORAGE": "/dcs/large/u5573765",
+    "SMT_DATA_ROOT": "/dcs/large/u5573765/data",
+    "SMT_DB": "/dcs/large/u5573765/db/results.sqlite",
+    "SMAC_WORKERS": "1 (n_workers>1 causes multiprocessing issues on tiger)",
+    "FEATURE_WORKERS": "64",
+    "PATH_additions": [
+      "/dcs/large/u5573765/tools/z3-4.15.4/bin",
+      "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin"
+    ]
+  },
+
+  "benchmark_suite": {
+    "name": "suite_9k",
+    "path": "/dcs/large/u5573765/data/benchmarks/suite_9k",
+    "total_instances": 9000,
+    "QF_BV": 3000,
+    "QF_LIA": 3000,
+    "QF_NRA": 3000
+  },
+
+  "database": {
+    "path": "/dcs/large/u5573765/db/results.sqlite",
+    "portfolio_id": 7,
+    "timeout_s": 60,
+    "par2_penalty_s": 120,
+    "config_ids": [109, 112, 114, 115, 116, 118],
+    "config_names": [
+      "cvc5_qfnra_05_nl_cov",
+      "cvc5_qfnra_08_decision_just",
+      "z3_baseline_default",
+      "cvc5_baseline_default",
+      "z3_baseline_qflia_case_split",
+      "z3_baseline_qfbv_sat_euf_sat"
+    ],
+    "solver_list": [
+      "cvc5::cvc5_qfnra_05_nl_cov",
+      "cvc5::cvc5_qfnra_08_decision_just",
+      "z3::z3_baseline_default",
+      "cvc5::cvc5_baseline_default",
+      "z3::z3_baseline_qflia_case_split",
+      "z3::z3_baseline_qfbv_sat_euf_sat"
+    ]
+  },
+
+  "cross_validation": {
+    "method": "5-fold family-aware",
+    "folds_file": "shared_folds_k5.json",
+    "folds_path": "/dcs/23/u5573765/cs351/eval-smtgazer/shared_folds_k5.json",
+    "shared_with": ["Grackle", "MachSMT", "Medley"]
+  },
+
+  "smtgazer_training_params": {
+    "cluster_num": 10,
+    "portfolio_size": 4,
+    "seed": 42,
+    "smac_n_trials": 200,
+    "smac_workers": 1,
+    "smac_internal_cv_splits": 5,
+    "timeout_s": 60,
+    "algorithm": "KMeans clustering → greedy 4-solver selection → SMAC3 Bayesian time allocation optimization",
+    "feature_extractor": "machfea (189 features per benchmark)"
+  },
+
+  "sbatch_flags": {
+    "verify_job": {
+      "partition": "tiger",
+      "cpus_per_task": 32,
+      "mem_per_cpu_mb": 3000,
+      "wall_time": "02:00:00"
+    },
+    "features_job": {
+      "partition": "tiger",
+      "cpus_per_task": 64,
+      "mem_per_cpu_mb": 3000,
+      "wall_time": "00:30:00"
+    },
+    "pipeline_job": {
+      "partition": "tiger",
+      "cpus_per_task": 64,
+      "mem_per_cpu_mb": 3000,
+      "wall_time": "12:00:00",
+      "mail_type": "END,FAIL,TIME_LIMIT_80"
+    }
+  },
+
+  "working_directory": {
+    "path": "/dcs/large/u5573765/smtgazer_workdir",
+    "layout": {
+      "SMTportfolio.py": "copied from artifact",
+      "portfolio_smac3.py": "copied from artifact",
+      "smac/": "symlink → artifact/SMTGazer/smac/",
+      "data/{logic}Labels.json": "generated from DB (PAR-2 times)",
+      "machfea/{logic}_solver.json": "generated (solver list)",
+      "machfea/infer_result/{logic}_train_feature.json": "extracted by machfea (189 features)",
+      "tmp/": "intermediate normalized features, cluster assignments",
+      "output/train_result_{logic}_4_10_42.json": "trained portfolio models"
+    }
+  },
+
+  "cli_invocations": {
+    "data_preparation": {
+      "command": "python3 /dcs/23/u5573765/cs351/eval-smtgazer/smtgazer_data_prep.py",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-smtgazer",
+      "outputs": ["data/{logic}Labels.json", "machfea/{logic}_solver.json", "instance_metadata.json"]
+    },
+    "feature_extraction": {
+      "command": "python3 /dcs/23/u5573765/cs351/eval-smtgazer/smtgazer_feature_extractor.py",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-smtgazer",
+      "env": {"FEATURE_WORKERS": "64"},
+      "outputs": ["machfea/infer_result/{logic}_train_feature.json"]
+    },
+    "training_per_logic": {
+      "command": "python SMTportfolio.py train -dataset {logic} -solverdict machfea/{logic}_solver.json -seed 42 -cluster_num 10",
+      "working_directory": "/dcs/large/u5573765/smtgazer_workdir",
+      "env": {"SMAC_WORKERS": "1"},
+      "outputs": ["output/train_result_{logic}_4_10_42.json"]
+    },
+    "inference_per_logic": {
+      "command": "python SMTportfolio.py infer -clusterPortfolio output/train_result_{logic}_4_10_42.json -dataset {logic} -solverdict machfea/{logic}_solver.json -seed 42",
+      "working_directory": "/dcs/large/u5573765/smtgazer_workdir",
+      "outputs": ["output/test_result_{logic}_42_10.json"]
+    },
+    "full_pipeline": {
+      "command": "python3 /dcs/23/u5573765/cs351/eval-smtgazer/smtgazer_full_pipeline.py {train|kfold|register|all}",
+      "working_directory": "/dcs/23/u5573765/cs351/eval-smtgazer"
+    },
+    "submit_command": "cd /dcs/23/u5573765/cs351/eval-smtgazer && sbatch verify_smtgazer.sbatch"
+  },
+
+  "pipeline_phases": {
+    "phase0_verify": {
+      "script": "verify_smtgazer.py",
+      "sbatch": "verify_smtgazer.sbatch",
+      "description": "Smoke test on 10 QF_BV benchmarks with 2 clusters",
+      "duration_estimate": "~5 min",
+      "auto_chains": "submits smtgazer_pipeline.sbatch on success"
+    },
+    "phase1_data_prep": {
+      "script": "smtgazer_data_prep.py",
+      "description": "Generate Labels.json, solver.json, metadata from DB",
+      "duration_estimate": "~10 seconds"
+    },
+    "phase2_features": {
+      "script": "smtgazer_feature_extractor.py",
+      "description": "Parallel machfea extraction (64 workers, 189 features/benchmark)",
+      "duration_estimate": "~13 minutes"
+    },
+    "phase3_training": {
+      "script": "smtgazer_full_pipeline.py train",
+      "description": "SMAC3 training for 3 logics in parallel (KMeans → greedy selection → SMAC3 time optimization)",
+      "duration_estimate": "~90 minutes"
+    },
+    "phase4_kfold": {
+      "script": "smtgazer_full_pipeline.py kfold",
+      "description": "5-fold family-aware CV with retraining (shared folds, 3 logics parallel per fold)",
+      "duration_estimate": "~7.5 hours"
+    },
+    "phase5_register": {
+      "script": "smtgazer_full_pipeline.py register",
+      "description": "Write selector + 9000 decisions to DB",
+      "duration_estimate": "~10 seconds",
+      "selector_name": "smtgazer_suite9k_portfolio7"
+    }
+  },
+
+  "outputs": {
+    "trained_models": [
+      "output/train_result_QF_BV_4_10_42.json",
+      "output/train_result_QF_LIA_4_10_42.json",
+      "output/train_result_QF_NRA_4_10_42.json"
+    ],
+    "kfold_results": [
+      "smtgazer_results/kfold_k5_summary.csv",
+      "smtgazer_results/kfold_k5_perfold.csv",
+      "smtgazer_results/kfold_k5_perlogic.csv",
+      "smtgazer_results/kfold_k5_meanstd.csv",
+      "smtgazer_results/kfold_k5_tail10.csv"
+    ],
+    "db_registration": {
+      "table": "ml_selectors + decisions",
+      "selector_name": "smtgazer_suite9k_portfolio7",
+      "expected_decisions": 9000
+    }
+  }
+}

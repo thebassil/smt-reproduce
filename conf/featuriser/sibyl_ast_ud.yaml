@@ -1,0 +1,7 @@
+_target_: pipeline.featurisers.sibyl_ast_ud.SibylASTUDFeaturiser
+output_type: GRAPH
+edge_sets:
+  - AST
+  - Back-AST
+  - Data
+max_nodes: 10000

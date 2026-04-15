@@ -1,0 +1,4 @@
+_target_: pipeline.policies.top2_split.Top2SplitPolicy
+decision_type: schedule
+ratio: 0.5
+k: 2

@@ -1,0 +1,16 @@
+{
+  "experiment_code": "ABL_NO_JUMP",
+  "knob": "no_jump",
+  "values": [
+    true,
+    false
+  ],
+  "logics": [
+    "QF_BV",
+    "QF_LIA"
+  ],
+  "reference_value": true,
+  "submitted_at": "2026-03-04T18:06:14.510349+00:00",
+  "jobs": [],
+  "dry_run": true
+}

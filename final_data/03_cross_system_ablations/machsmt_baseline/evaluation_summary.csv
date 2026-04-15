@@ -1,0 +1,6 @@
+strategy,total_par2,avg_par2,solved,solved_pct,notes
+VBS,4600.28,9.201,469,93.8%,
+COMBINED_SBS,5661.55,11.323,461,92.2%,"Per-logic: {'QF_LIA': 'z3::z3_lia_default', 'QF_BV': 'z3::z3_bv_default'}"
+SBS,31844.71,63.689,239,47.8%,Uses: z3::z3_lia_default
+RANDOM,11491.61,22.983,413,82.6%,
+MACHSMT,4941.76,9.884,467,93.4%,

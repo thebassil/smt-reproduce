@@ -1,0 +1,18 @@
+# Ablation: Edge set selection
+# Knob:    edge_sets
+# Class:   algorithmic
+# Reference value: [AST, Back-AST, Data]
+
+experiment_code: ABL_EDGE_SETS
+knob: edge_sets
+description: >
+  Which edge types to include in the graph representation.
+  AST = parent-child, Back-AST = child-parent, Data = dataflow.
+  Production uses all three.
+
+values:
+  - ["AST", "Back-AST", "Data"]       # ← reference (all)
+  - ["AST"]                            # AST only
+  - ["AST", "Back-AST"]               # AST + Back-AST (no dataflow)
+  - ["AST", "Data"]                    # AST + Data (no back-edges)
+  - ["Data"]                           # Data only

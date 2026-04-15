@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,MachSMT162,AutoFolioCard,SelectArgmin,QF_BV,42,0,13075.25,83.7,0.1381,731.8,130.5,2400.0,600.0,1299621,1
+extended,REF-VECTOR,MachSMT162,AutoFolioCard,SelectArgmin,QF_BV,42,1,12180.78,85.2,0.0969,646.0,204.4,2400.0,600.0,1299621,1
+extended,REF-VECTOR,MachSMT162,AutoFolioCard,SelectArgmin,QF_BV,42,2,11590.51,85.7,0.1199,730.2,117.6,2400.0,600.0,1299621,1
+extended,REF-VECTOR,MachSMT162,AutoFolioCard,SelectArgmin,QF_BV,42,3,13358.69,83.3,0.1626,651.3,203.5,2400.0,600.0,1299621,1
+extended,REF-VECTOR,MachSMT162,AutoFolioCard,SelectArgmin,QF_BV,42,4,12830.98,84.0,0.1482,656.8,193.4,2400.0,600.0,1299621,1
+extended,REF-VECTOR,MachSMT162,AutoFolioCard,SelectArgmin,QF_BV,42,MEAN,12607.24,84.4,65.8266,4265.4,,,,1299621,1

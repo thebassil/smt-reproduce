@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.graph_tess.TESSFeaturiser
+output_type: GRAPH

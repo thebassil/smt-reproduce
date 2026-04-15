@@ -1,0 +1,6 @@
+defaults:
+  - tripartite
+
+_target_: pipeline.featurisers.graph_tripartite.TripartiteGraphFeaturiser
+output_type: GRAPH
+use_posenc: false

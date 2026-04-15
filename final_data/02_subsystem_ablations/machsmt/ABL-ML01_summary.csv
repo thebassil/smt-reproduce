@@ -1,0 +1,10 @@
+variant_index,variant_value,logic,mean_par2,std_par2,mean_solve_rate,n_folds,delta_vs_ref
+0,scikit,QF_BV,33.0407,28.6799,0.7425,5,0.0
+0,scikit,QF_LIA,25.3343,21.2881,0.8102,5,0.0
+0,scikit,QF_NRA,25.1943,32.0023,0.8242,5,0.0
+1,xgboost,QF_BV,36.3611,23.5353,0.7197,5,3.3204
+1,xgboost,QF_LIA,43.8008,40.1986,0.6511,5,18.4665
+1,xgboost,QF_NRA,26.5081,25.0598,0.8015,5,1.3138
+2,torch,QF_BV,120.0,0.0,0.0,5,86.9593
+2,torch,QF_LIA,120.0,0.0,0.0,5,94.6657
+2,torch,QF_NRA,120.0,0.0,0.0,5,94.8057

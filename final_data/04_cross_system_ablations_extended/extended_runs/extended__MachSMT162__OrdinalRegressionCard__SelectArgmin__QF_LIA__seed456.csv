@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,MachSMT162,OrdinalRegressionCard,SelectArgmin,QF_LIA,456,0,19105.13,75.0,2.1384,86.8,20.8,2400.0,600.0,1299621,70
+extended,REF-VECTOR,MachSMT162,OrdinalRegressionCard,SelectArgmin,QF_LIA,456,1,17806.99,76.8,2.1220,85.4,21.8,2400.0,600.0,1299621,70
+extended,REF-VECTOR,MachSMT162,OrdinalRegressionCard,SelectArgmin,QF_LIA,456,2,20547.42,73.3,2.6139,86.1,21.0,2400.0,600.0,1299621,70
+extended,REF-VECTOR,MachSMT162,OrdinalRegressionCard,SelectArgmin,QF_LIA,456,3,17029.32,78.2,3.2387,88.5,18.7,2400.0,600.0,1299621,70
+extended,REF-VECTOR,MachSMT162,OrdinalRegressionCard,SelectArgmin,QF_LIA,456,4,19369.66,74.5,1.6226,85.7,21.2,2400.0,600.0,1299621,70
+extended,REF-VECTOR,MachSMT162,OrdinalRegressionCard,SelectArgmin,QF_LIA,456,MEAN,18771.71,75.6,-752.6732,536.0,,,,1299621,70

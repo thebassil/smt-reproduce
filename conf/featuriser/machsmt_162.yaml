@@ -1,0 +1,3 @@
+_target_: pipeline.featurisers.machsmt_162.MachSMT162
+output_type: VECTOR
+feature_timeout_s: 10.0

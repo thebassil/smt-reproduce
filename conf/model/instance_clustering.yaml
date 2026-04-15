@@ -1,0 +1,5 @@
+_target_: pipeline.models.instance_clustering.InstanceClusteringCard
+method: kmeans
+n_clusters: 4
+max_k: 20
+assignment: hard

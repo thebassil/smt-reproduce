@@ -1,0 +1,4 @@
+experiment_base: portfolio_size
+ablation_knob: portfolio_size
+reference_value: 4
+values: [1, 2, 3, 4, 5, 6]

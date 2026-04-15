@@ -1,0 +1,182 @@
+SMT environment loaded from /dcs/large/u5573765
+=== Task 4: /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablations/templates/max_score_sweep.yaml ===
+Experiment: ABL-MS01
+  Knob: max_score
+  Values: [60, 120, 240]
+  Reference max_score=120
+  Suite: suite_9k, Portfolio: 7
+  Logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+  K-fold: 5
+======================================================================
+Experiment: ABL-MS01
+  Knob: max_score
+  Values: [60, 120, 240]
+  Logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+======================================================================
+Loaded 9000 benchmarks from suite_9k
+Filtered to 9000 benchmarks for logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+Pre-parsing all benchmarks (one-time cost)...
+  Parsed 500/9000 benchmarks
+  Parsed 1000/9000 benchmarks
+  Parsed 1500/9000 benchmarks
+  Parsed 2000/9000 benchmarks
+  Parsed 2500/9000 benchmarks
+  Parsed 3000/9000 benchmarks
+  Parsed 3500/9000 benchmarks
+  Parsed 4000/9000 benchmarks
+  Parsed 4500/9000 benchmarks
+  Parsed 5000/9000 benchmarks
+  Parsed 5500/9000 benchmarks
+  Parsed 6000/9000 benchmarks
+  Parsed 6500/9000 benchmarks
+  Parsed 7000/9000 benchmarks
+  Parsed 7500/9000 benchmarks
+  Parsed 8000/9000 benchmarks
+  Parsed 8500/9000 benchmarks
+  Parsed 9000/9000 benchmarks
+Cached features for 9000 benchmarks
+
+============================================================
+Variant 0: max_score=60
+  k-fold=5
+============================================================
+  Fold 0 QF_BV: avg_par2=31.719, solved=525/702 (74.8%)
+  Fold 0 QF_LIA: avg_par2=27.932, solved=476/575 (82.8%)
+  Fold 0 QF_NRA: avg_par2=1.227, solved=875/882 (99.2%)
+  Fold 1 QF_BV: avg_par2=64.332, solved=274/550 (49.8%)
+  Fold 1 QF_LIA: avg_par2=7.577, solved=518/541 (95.7%)
+  Fold 1 QF_NRA: avg_par2=11.325, solved=476/512 (93.0%)
+  Fold 2 QF_BV: avg_par2=2.292, solved=554/556 (99.6%)
+  Fold 2 QF_LIA: avg_par2=9.770, solved=613/649 (94.5%)
+  Fold 2 QF_NRA: avg_par2=29.688, solved=391/480 (81.5%)
+  Fold 3 QF_BV: avg_par2=19.969, solved=503/589 (85.4%)
+  Fold 3 QF_LIA: avg_par2=27.861, solved=504/647 (77.9%)
+  Fold 3 QF_NRA: avg_par2=78.858, solved=231/544 (42.5%)
+  Fold 4 QF_BV: avg_par2=54.182, solved=337/603 (55.9%)
+  Fold 4 QF_LIA: avg_par2=28.370, solved=452/588 (76.9%)
+  Fold 4 QF_NRA: avg_par2=3.936, solved=565/582 (97.1%)
+
+============================================================
+Variant 1: max_score=120
+  k-fold=5
+============================================================
+  Fold 0 QF_BV: avg_par2=27.361, solved=551/702 (78.5%)
+  Fold 0 QF_LIA: avg_par2=27.703, solved=476/575 (82.8%)
+  Fold 0 QF_NRA: avg_par2=0.655, solved=879/882 (99.7%)
+  Fold 1 QF_BV: avg_par2=70.211, solved=247/550 (44.9%)
+  Fold 1 QF_LIA: avg_par2=12.081, solved=496/541 (91.7%)
+  Fold 1 QF_NRA: avg_par2=13.383, solved=456/512 (89.1%)
+  Fold 2 QF_BV: avg_par2=2.018, solved=552/556 (99.3%)
+  Fold 2 QF_LIA: avg_par2=3.425, solved=639/649 (98.5%)
+  Fold 2 QF_NRA: avg_par2=28.819, solved=404/480 (84.2%)
+  Fold 3 QF_BV: avg_par2=11.433, solved=546/589 (92.7%)
+  Fold 3 QF_LIA: avg_par2=24.213, solved=525/647 (81.1%)
+  Fold 3 QF_NRA: avg_par2=79.015, solved=230/544 (42.3%)
+  Fold 4 QF_BV: avg_par2=54.182, solved=337/603 (55.9%)
+  Fold 4 QF_LIA: avg_par2=59.249, solved=300/588 (51.0%)
+  Fold 4 QF_NRA: avg_par2=4.099, solved=564/582 (96.9%)
+
+============================================================
+Variant 2: max_score=240
+  k-fold=5
+============================================================
+  Fold 0 QF_BV: avg_par2=22.136, solved=579/702 (82.5%)
+  Fold 0 QF_LIA: avg_par2=27.703, solved=476/575 (82.8%)
+  Fold 0 QF_NRA: avg_par2=1.333, solved=874/882 (99.1%)
+  Fold 1 QF_BV: avg_par2=71.724, solved=245/550 (44.5%)
+  Fold 1 QF_LIA: avg_par2=8.933, solved=508/541 (93.9%)
+  Fold 1 QF_NRA: avg_par2=13.931, solved=454/512 (88.7%)
+  Fold 2 QF_BV: avg_par2=2.332, solved=553/556 (99.5%)
+  Fold 2 QF_LIA: avg_par2=9.943, solved=612/649 (94.3%)
+  Fold 2 QF_NRA: avg_par2=37.826, solved=372/480 (77.5%)
+  Fold 3 QF_BV: avg_par2=14.407, solved=531/589 (90.2%)
+  Fold 3 QF_LIA: avg_par2=29.467, solved=496/647 (76.7%)
+  Fold 3 QF_NRA: avg_par2=78.736, solved=232/544 (42.6%)
+  Fold 4 QF_BV: avg_par2=32.149, solved=453/603 (75.1%)
+  Fold 4 QF_LIA: avg_par2=52.594, solved=333/588 (56.6%)
+  Fold 4 QF_NRA: avg_par2=3.462, solved=567/582 (97.4%)
+
+Experiment ABL-MS01 completed.
+  Runs CSV:    /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablations/results/ABL-MS01_runs.csv
+  Summary CSV: /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablations/results/ABL-MS01_summary.csv
+
+# Ablation Report: ABL-MS01
+
+**Hypothesis**: Higher max_score penalises timeouts more, potentially shifting solver preference
+**Knob**: max_score
+**Values**: [60, 120, 240]
+
+## QF_BV
+
+| Variant | Value | Mean PAR-2 | Std PAR-2 | Solve Rate | Folds | Delta vs Ref |
+|---------|-------|------------|-----------|------------|-------|--------------|
+| 0 | 60 | 34.499 | 25.1674 | 73.1% | 5 | +1.4583 |
+| 1 | 120 | 33.0407 | 28.6799 | 74.2% | 5 | 0.0000 |
+| 2 | 240 | 28.5495 | 26.4837 | 78.3% | 5 | -4.4912 |
+
+## QF_LIA
+
+| Variant | Value | Mean PAR-2 | Std PAR-2 | Solve Rate | Folds | Delta vs Ref |
+|---------|-------|------------|-----------|------------|-------|--------------|
+| 0 | 60 | 20.302 | 10.6453 | 85.5% | 5 | -5.0323 |
+| 1 | 120 | 25.3343 | 21.2881 | 81.0% | 5 | 0.0000 |
+| 2 | 240 | 25.728 | 17.8247 | 80.9% | 5 | +0.3937 |
+
+## QF_NRA
+
+| Variant | Value | Mean PAR-2 | Std PAR-2 | Solve Rate | Folds | Delta vs Ref |
+|---------|-------|------------|-----------|------------|-------|--------------|
+| 0 | 60 | 25.0067 | 32.0878 | 82.6% | 5 | -0.1876 |
+| 1 | 120 | 25.1943 | 32.0023 | 82.4% | 5 | 0.0000 |
+| 2 | 240 | 27.0578 | 32.3166 | 81.1% | 5 | +1.8635 |
+
+## Per-Fold Details
+
+| Variant | Value | Fold | Logic | Instances | Avg PAR-2 | Solved | Solve Rate |
+|---------|-------|------|-------|-----------|-----------|--------|------------|
+| 0 | 60 | 0 | QF_BV | 702 | 31.7189 | 525 | 74.8% |
+| 0 | 60 | 0 | QF_LIA | 575 | 27.9318 | 476 | 82.8% |
+| 0 | 60 | 0 | QF_NRA | 882 | 1.2266 | 875 | 99.2% |
+| 0 | 60 | 1 | QF_BV | 550 | 64.3324 | 274 | 49.8% |
+| 0 | 60 | 1 | QF_LIA | 541 | 7.577 | 518 | 95.8% |
+| 0 | 60 | 1 | QF_NRA | 512 | 11.3251 | 476 | 93.0% |
+| 0 | 60 | 2 | QF_BV | 556 | 2.2918 | 554 | 99.6% |
+| 0 | 60 | 2 | QF_LIA | 649 | 9.7703 | 613 | 94.5% |
+| 0 | 60 | 2 | QF_NRA | 480 | 29.688 | 391 | 81.5% |
+| 0 | 60 | 3 | QF_BV | 589 | 19.9695 | 503 | 85.4% |
+| 0 | 60 | 3 | QF_LIA | 647 | 27.8609 | 504 | 77.9% |
+| 0 | 60 | 3 | QF_NRA | 544 | 78.8578 | 231 | 42.5% |
+| 0 | 60 | 4 | QF_BV | 603 | 54.1822 | 337 | 55.9% |
+| 0 | 60 | 4 | QF_LIA | 588 | 28.37 | 452 | 76.9% |
+| 0 | 60 | 4 | QF_NRA | 582 | 3.9362 | 565 | 97.1% |
+| 1 | 120 | 0 | QF_BV | 702 | 27.3605 | 551 | 78.5% |
+| 1 | 120 | 0 | QF_LIA | 575 | 27.7029 | 476 | 82.8% |
+| 1 | 120 | 0 | QF_NRA | 882 | 0.6547 | 879 | 99.7% |
+| 1 | 120 | 1 | QF_BV | 550 | 70.2107 | 247 | 44.9% |
+| 1 | 120 | 1 | QF_LIA | 541 | 12.0809 | 496 | 91.7% |
+| 1 | 120 | 1 | QF_NRA | 512 | 13.3831 | 456 | 89.1% |
+| 1 | 120 | 2 | QF_BV | 556 | 2.0178 | 552 | 99.3% |
+| 1 | 120 | 2 | QF_LIA | 649 | 3.4255 | 639 | 98.5% |
+| 1 | 120 | 2 | QF_NRA | 480 | 28.8193 | 404 | 84.2% |
+| 1 | 120 | 3 | QF_BV | 589 | 11.4327 | 546 | 92.7% |
+| 1 | 120 | 3 | QF_LIA | 647 | 24.2132 | 525 | 81.1% |
+| 1 | 120 | 3 | QF_NRA | 544 | 79.0155 | 230 | 42.3% |
+| 1 | 120 | 4 | QF_BV | 603 | 54.1819 | 337 | 55.9% |
+| 1 | 120 | 4 | QF_LIA | 588 | 59.2491 | 300 | 51.0% |
+| 1 | 120 | 4 | QF_NRA | 582 | 4.0988 | 564 | 96.9% |
+| 2 | 240 | 0 | QF_BV | 702 | 22.1357 | 579 | 82.5% |
+| 2 | 240 | 0 | QF_LIA | 575 | 27.7035 | 476 | 82.8% |
+| 2 | 240 | 0 | QF_NRA | 882 | 1.3335 | 874 | 99.1% |
+| 2 | 240 | 1 | QF_BV | 550 | 71.7244 | 245 | 44.5% |
+| 2 | 240 | 1 | QF_LIA | 541 | 8.9329 | 508 | 93.9% |
+| 2 | 240 | 1 | QF_NRA | 512 | 13.9306 | 454 | 88.7% |
+| 2 | 240 | 2 | QF_BV | 556 | 2.3317 | 553 | 99.5% |
+| 2 | 240 | 2 | QF_LIA | 649 | 9.9432 | 612 | 94.3% |
+| 2 | 240 | 2 | QF_NRA | 480 | 37.8259 | 372 | 77.5% |
+| 2 | 240 | 3 | QF_BV | 589 | 14.4072 | 531 | 90.1% |
+| 2 | 240 | 3 | QF_LIA | 647 | 29.4667 | 496 | 76.7% |
+| 2 | 240 | 3 | QF_NRA | 544 | 78.7365 | 232 | 42.6% |
+| 2 | 240 | 4 | QF_BV | 603 | 32.1487 | 453 | 75.1% |
+| 2 | 240 | 4 | QF_LIA | 588 | 52.5936 | 333 | 56.6% |
+| 2 | 240 | 4 | QF_NRA | 582 | 3.4624 | 567 | 97.4% |
+

@@ -1,0 +1,4 @@
+_target_: pipeline.policies.exponential_timer.ExponentialTimerPolicy
+decision_type: schedule
+alpha: 0.5
+k: 3

@@ -1,0 +1,4 @@
+experiment_base: smac_n_trials
+ablation_knob: smac_n_trials
+reference_value: 50
+values: [25, 50, 100, 200]

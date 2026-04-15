@@ -1,0 +1,7 @@
+variant_index,variant_value,logic,mean_par2,std_par2,mean_solve_rate,n_folds,delta_vs_ref
+0,False,QF_BV,33.0407,28.6799,0.7425,5,0.0
+0,False,QF_LIA,25.3343,21.2881,0.8102,5,0.0
+0,False,QF_NRA,25.1943,32.0023,0.8242,5,0.0
+1,True,QF_BV,33.0407,28.6799,0.7425,5,0.0
+1,True,QF_LIA,24.4316,20.7702,0.8223,5,-0.9027
+1,True,QF_NRA,24.5089,30.9256,0.8232,5,-0.6854

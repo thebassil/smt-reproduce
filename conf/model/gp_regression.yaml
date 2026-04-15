@@ -1,0 +1,3 @@
+_target_: pipeline.models.gp_regression.GPRegressionCard
+n_inducing: 50
+kernel: rbf

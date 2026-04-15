@@ -1,0 +1,16 @@
+# Ablation: Training epochs
+# Knob:    epochs
+# Class:   algorithmic
+# Reference value: 20
+
+experiment_code: ABL_EPOCHS
+knob: epochs
+description: >
+  Number of training passes over the full dataset.
+  Production used 20 (smtTrainer.py default).
+
+values:
+  - 5
+  - 10
+  - 15
+  - 20            # ← reference

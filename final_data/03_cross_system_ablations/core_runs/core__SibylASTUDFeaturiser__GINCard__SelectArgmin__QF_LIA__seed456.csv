@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+core,REF-GNN,SibylASTUDFeaturiser,GINCard,SelectArgmin,QF_LIA,456,0,7841.94,91.3,0.2882,327.7,71.0,2400.0,600.0,1133434,24
+core,REF-GNN,SibylASTUDFeaturiser,GINCard,SelectArgmin,QF_LIA,456,1,7977.50,91.8,0.3986,314.1,69.0,2400.0,600.0,1133434,24
+core,REF-GNN,SibylASTUDFeaturiser,GINCard,SelectArgmin,QF_LIA,456,2,7015.74,93.0,0.2339,315.0,65.1,2400.0,600.0,1133434,24
+core,REF-GNN,SibylASTUDFeaturiser,GINCard,SelectArgmin,QF_LIA,456,3,5922.45,94.2,0.4741,324.8,58.7,2400.0,600.0,1133434,24
+core,REF-GNN,SibylASTUDFeaturiser,GINCard,SelectArgmin,QF_LIA,456,4,9041.61,90.0,0.2242,315.8,67.9,2400.0,600.0,1133434,24
+core,REF-GNN,SibylASTUDFeaturiser,GINCard,SelectArgmin,QF_LIA,456,MEAN,7559.85,92.1,-13.0341,1929.1,,,,1133434,24

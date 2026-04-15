@@ -1,0 +1,4 @@
+_target_: pipeline.policies.survival_curve_schedule.SurvivalCurveSchedulePolicy
+decision_type: schedule
+switch_fraction: 0.3
+n_solvers: 2

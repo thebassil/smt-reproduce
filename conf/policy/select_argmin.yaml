@@ -1,0 +1,3 @@
+_target_: pipeline.policies.select_argmin.SelectArgmin
+decision_type: select
+tie_break: random

@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,EntropyFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,0,17407.18,77.0,0.5152,957.4,161.4,2400.0,600.0,1301807,49
+extended,REF-VECTOR,EntropyFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,1,17074.66,77.5,0.5376,792.6,234.2,2400.0,600.0,1301807,49
+extended,REF-VECTOR,EntropyFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,2,16957.71,78.0,0.6385,862.3,132.8,2400.0,600.0,1301807,49
+extended,REF-VECTOR,EntropyFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,3,17237.62,77.3,0.5001,749.3,224.0,2400.0,600.0,1301807,49
+extended,REF-VECTOR,EntropyFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,4,16766.97,78.0,0.5004,740.2,222.0,2400.0,600.0,1301807,49
+extended,REF-VECTOR,EntropyFeatures,AdaBoostEHM,SelectArgmin,QF_BV,42,MEAN,17088.83,77.6,-39.8222,5076.2,,,,1301807,49

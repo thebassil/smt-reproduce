@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.proof_complexity.ProofComplexity
+output_type: VECTOR

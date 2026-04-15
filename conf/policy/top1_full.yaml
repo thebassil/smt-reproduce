@@ -1,0 +1,2 @@
+_target_: pipeline.policies.top1_full.Top1FullPolicy
+decision_type: schedule

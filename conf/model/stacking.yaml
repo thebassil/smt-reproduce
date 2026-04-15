@@ -1,0 +1,3 @@
+_target_: pipeline.models.stacking.StackingCard
+meta_learner: ridge
+base_models: null

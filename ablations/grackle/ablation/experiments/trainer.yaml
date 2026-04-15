@@ -1,0 +1,11 @@
+experiment: trainer
+description: "Effect of optimizer backend on portfolio quality"
+knob: trainer
+fly_key: trainer
+reference_value: ParamILS
+values:
+  - ParamILS
+  - Smac3
+  - Smac3HPO
+  - ROAR
+wall_time_override: null

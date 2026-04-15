@@ -1,0 +1,4 @@
+_target_: pipeline.policies.confidence_gate.ConfidenceGatePolicy
+decision_type: select
+tau: 0.5
+fallback_config: z3_baseline_default

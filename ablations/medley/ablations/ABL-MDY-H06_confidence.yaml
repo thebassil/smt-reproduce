@@ -1,0 +1,33 @@
+experiment:
+  code: "ABL-MDY-H06"
+  name: "Expo Timeout Confidence"
+  hypothesis: "confidence=0.95 provides tight timeout estimates without premature cutoff"
+
+reference:
+  classifier: neighbor
+  timeout_manager: expo
+  feature_setting: bow
+  timeout: 60
+  seed: 42
+  k: 10
+  time_k: 40
+  epsilon: 0.9
+  epsilon_decay: 0.9
+  gamma: 0.07
+  confidence: 0.95
+  reward: bump
+  kind: full
+  extra: true
+  set_lambda: 0
+  set_const: 0
+
+ablation:
+  flag: "confidence"
+  values: [0.5, 0.7, 0.85, 0.95, 0.99]
+
+execution:
+  k_fold: 5
+  folds_file: "shared_folds_k5.json"
+  suite_name: suite_9k
+  portfolio_id: 7
+  logics: [QF_BV, QF_LIA, QF_NRA]

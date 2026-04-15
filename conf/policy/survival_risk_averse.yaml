@@ -1,0 +1,3 @@
+_target_: pipeline.policies.survival_risk_averse.SurvivalRiskAversePolicy
+decision_type: select
+risk_parameter: 1.0

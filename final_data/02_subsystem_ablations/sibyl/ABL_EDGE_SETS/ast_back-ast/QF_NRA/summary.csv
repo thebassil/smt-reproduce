@@ -1,0 +1,2 @@
+experiment_code,knob,value,logic,k,total_instances,vbs_par2,vbs_solved,vbs_solved_pct,sbs_par2,sbs_solved,sbs_solved_pct,sibyl_par2,sibyl_solved,sibyl_solved_pct,vbs_matches,total_wall_seconds,timestamp_utc,sibyl_vs_sbs_pct,closeness_to_vbs_pct
+ABL_EDGE_SETS,edge_sets,"['AST', 'Back-AST']",QF_NRA,5,2967,33683.939999999966,2716,91.54027637344119,54258.291999999965,2541,85.64206268958544,45886.21599999993,2623,88.40579710144928,1040,17060.1,2026-03-19T06:48:02.857429+00:00,15.430039707110652,40.69180890848975

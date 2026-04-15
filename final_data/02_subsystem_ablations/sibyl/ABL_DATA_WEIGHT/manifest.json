@@ -1,0 +1,18 @@
+{
+  "experiment_code": "ABL_DATA_WEIGHT",
+  "knob": "data_weight",
+  "values": [
+    "best",
+    "order",
+    "none"
+  ],
+  "logics": [
+    "QF_BV",
+    "QF_LIA",
+    "QF_NRA"
+  ],
+  "reference_value": "best",
+  "submitted_at": "2026-03-16T15:11:13.933709+00:00",
+  "jobs": [],
+  "dry_run": true
+}

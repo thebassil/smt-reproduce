@@ -1,0 +1,14 @@
+/dcs/23/u5573765/.local/lib/python3.9/site-packages/torch/__init__.py:1236: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+Traceback (most recent call last):
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 810, in <module>
+    sys.exit(main())
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 802, in main
+    return cmd_run(args)
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 734, in cmd_run
+    runner.run()
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 234, in run
+    self._apply_config(variant_cfg)
+  File "/dcs/23/u5573765/cs351/smt-ablation-machsmt/ablation_harness.py", line 434, in _apply_config
+    from machsmt.config import CONFIG_OBJ
+ImportError: cannot import name 'CONFIG_OBJ' from 'machsmt.config' (/dcs/23/u5573765/cs351/smt-project/artifacts/machsmt/MachSMT/machsmt/config/__init__.py)

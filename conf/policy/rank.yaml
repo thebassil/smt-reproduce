@@ -1,0 +1,2 @@
+_target_: pipeline.policies.rank.RankPolicy
+decision_type: rank

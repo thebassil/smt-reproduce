@@ -1,0 +1,2 @@
+experiment_code,knob,value,logic,k,total_instances,vbs_par2,vbs_solved,vbs_solved_pct,sbs_par2,sbs_solved,sbs_solved_pct,sibyl_par2,sibyl_solved,sibyl_solved_pct,vbs_matches,total_wall_seconds,timestamp_utc,sibyl_vs_sbs_pct,closeness_to_vbs_pct
+ABL_EPOCHS,epochs,10,QF_LIA,5,250,1568.8009999999997,240,96.0,1844.744,239,95.6,3568.5420000000004,224,89.60000000000001,90,1165.0,2026-03-05T00:02:06.973253+00:00,-93.44375154492984,-624.6935055428111

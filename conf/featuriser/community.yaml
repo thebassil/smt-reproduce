@@ -1,0 +1,3 @@
+_target_: pipeline.featurisers.community_structure.CommunityStructure
+output_type: VECTOR
+method: greedy

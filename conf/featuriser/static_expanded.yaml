@@ -1,0 +1,7 @@
+_target_: pipeline.featurisers.static_expanded.StaticExpanded
+output_type: VECTOR
+n_components: 35
+degree: 2
+poly_only: false
+pca_only: false
+feature_timeout_s: 30.0

@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.graph_vcg.VCGFeaturiser
+output_type: GRAPH

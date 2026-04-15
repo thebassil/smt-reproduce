@@ -1,0 +1,5 @@
+_target_: pipeline.policies.cluster_dispatch.ClusterDispatchPolicy
+decision_type: schedule
+n_clusters: 5
+allocation: uniform
+seed: 42

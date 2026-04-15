@@ -1,0 +1,7 @@
+defaults:
+  - tree_lstm
+
+_target_: pipeline.featurisers.tree_lstm.TreeLSTMFeaturiser
+output_type: VECTOR
+embed_dim: 128
+flat_mode: true

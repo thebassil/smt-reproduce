@@ -1,0 +1,10 @@
+experiment: trainer_timeout
+description: "Effect of per-iteration training budget on portfolio quality"
+knob: trainer_timeout
+fly_key: trainer.timeout
+reference_value: 3600
+values:
+  - 900
+  - 3600
+  - 7200
+wall_time_override: null

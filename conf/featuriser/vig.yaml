@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.graph_vig.VIGFeaturiser
+output_type: GRAPH

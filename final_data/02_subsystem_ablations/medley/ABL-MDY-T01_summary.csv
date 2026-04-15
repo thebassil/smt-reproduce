@@ -1,0 +1,5 @@
+experiment,variant_idx,value,total,avg_par2,solved,solved_pct,vs_csbs_pct,vs_vbs_pct
+ABL-MDY-T01,0,expo,9000,23.025,7472,83.0,+13.1,+73.2
+ABL-MDY-T01,1,const,9000,22.217,7529,83.7,+9.2,+67.1
+ABL-MDY-T01,2,nearest,9000,22.496,7510,83.4,+10.5,+69.2
+ABL-MDY-T01,3,sgd,9000,26.542,7222,80.2,+30.4,+99.6

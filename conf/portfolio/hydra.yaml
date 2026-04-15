@@ -1,0 +1,6 @@
+_target_: pipeline.portfolios.hydra.HydraPortfolio
+max_configs: 8
+configurator: smac
+warm_start: false
+targeting: complement
+seed: ${seed}

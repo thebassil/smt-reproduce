@@ -1,0 +1,4 @@
+_target_: pipeline.policies.probability_proportional.ProbabilityProportionalPolicy
+decision_type: schedule
+k: null
+min_fraction: 0.05

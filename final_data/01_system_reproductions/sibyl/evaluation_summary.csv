@@ -1,0 +1,6 @@
+strategy,total_par2,avg_par2,solved,solved_pct,notes
+VBS,119659.06,13.295,8153,90.6%,
+SIBYL,254936.58,28.326,7125,79.2%,
+COMBINED_SBS,171517.34,19.057,7722,85.8%,"Per-logic: {'QF_BV': 'z3_baseline_qflia_case_split', 'QF_LIA': 'z3_baseline_qflia_case_split', 'QF_NRA': 'cvc5_qfnra_08_decision_just'}"
+SBS,175852.98,19.539,7772,86.4%,Uses: z3_baseline_qflia_case_split
+RANDOM,280460.05,31.162,6854,76.2%,

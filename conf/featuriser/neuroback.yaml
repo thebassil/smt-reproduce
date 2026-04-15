@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.graph_neuroback.NeuroBackFeaturiser
+output_type: GRAPH

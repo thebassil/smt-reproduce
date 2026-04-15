@@ -1,0 +1,143 @@
+{
+  "frozen_at": "2026-03-03T14:23:53Z",
+  "hostname": "zebra-04",
+  "repos": {
+    "eval_grackle": {
+      "commit": "d0fd16c21339a19f2ba33d2e64d0c3aed8c31743",
+      "branch": "eval/suite9k-grackle",
+      "dirty": false
+    },
+    "small_sbs_grackle": {
+      "commit": "78d72d6ac42870d780f63f649e26b9ab88d2622f",
+      "path": "/dcs/23/u5573765/cs351/small-sbs-grackle"
+    }
+  },
+  "solvers": {
+    "cvc5": {
+      "version": "This is cvc5 version 1.3.2 [git 86cecd8 on branch HEAD]",
+      "path": "/dcs/large/u5573765/tools/cvc5-Linux-x86_64-static/bin/cvc5",
+      "binary_md5": "b16b61fc531846499107df9336ebfdd2"
+    },
+    "z3": {
+      "version": "Z3 version 4.15.4 - 64 bit",
+      "path": "/dcs/large/u5573765/tools/z3-4.15.4/bin/z3",
+      "binary_md5": "e60f54e17259d9ed67d748a5abf042d1"
+    }
+  },
+  "python": {
+    "version": "3.9.25",
+    "grackle_version": "0.1"
+  },
+  "sbatch": {
+    "partition": "tiger",
+    "cpus_per_task": 4,
+    "mem_per_cpu_mb": 3000,
+    "wall_time": "14:00:00",
+    "array_tasks": "0-5"
+  },
+  "grackle_params": {
+    "cores": 4,
+    "tops": 8,
+    "best": 1,
+    "rank": 1,
+    "grackle_timeout_s": 43200,
+    "runner_timeout_s": 30,
+    "trainer_timeout_s": 3600,
+    "penalty": 100000000,
+    "trainer_restarts": true,
+    "atavistic": false
+  },
+  "data": {
+    "suite_dir": "/dcs/large/u5573765/data/benchmarks/suite_9k",
+    "instances": {
+      "QF_BV": 3000,
+      "QF_LIA": 3000,
+      "QF_NRA": 3000,
+      "total": 9000
+    },
+    "shared_folds_md5": "0fc46d846e8b064f5c866d355fa0c91d",
+    "benchmark_lists": {
+      "QF_BV_md5": "a64f76033c97add342a62d77cc81db66",
+      "QF_LIA_md5": "40da06e199e87ab05895497d1f7b12ef",
+      "QF_NRA_md5": "2e4a7e1ce897298925686617bbe4e7c3"
+    }
+  },
+  "seeds": {
+    "cvc5_decision_just": "752790e23a4e0dc13dfdd6dc5bb5d5c9",
+    "cvc5_default": "191fb5053d0be33854ed078132a1545a",
+    "cvc5_nl_cov": "161c208cbc411d85ed0ada07880c7e06",
+    "z3_case_split": "201dbdb5fd5a61e8d679c2d33df50208",
+    "z3_default": "10fcece4a24d5f70efe356d17731714a",
+    "z3_sat_euf": "82dcc74fb0b003b502cc6ce8545063fa"
+  },
+  "fly_configs": {
+    "cvc5_qfbv/cvc5_qfbv.fly": {
+      "md5": "60369c61f69aef47b3ebae57b6d54e1c",
+      "grackle_timeout": 43200,
+      "trainer_timeout": 3600,
+      "runner_timeout": 30,
+      "penalty": 100000000
+    },
+    "cvc5_qflia/cvc5_qflia.fly": {
+      "md5": "856707dfbdae8d28223c905ec75ddc78",
+      "grackle_timeout": 43200,
+      "trainer_timeout": 3600,
+      "runner_timeout": 30,
+      "penalty": 100000000
+    },
+    "cvc5_qfnra/cvc5_qfnra.fly": {
+      "md5": "e10b96003f1ad56a1e951a09fbcf3c2c",
+      "grackle_timeout": 43200,
+      "trainer_timeout": 3600,
+      "runner_timeout": 30,
+      "penalty": 100000000
+    },
+    "z3_qfbv/z3_qfbv.fly": {
+      "md5": "23dff383a085865103350cb2c12b7979",
+      "grackle_timeout": 43200,
+      "trainer_timeout": 3600,
+      "runner_timeout": 30,
+      "penalty": 100000000
+    },
+    "z3_qflia/z3_qflia.fly": {
+      "md5": "66141276333c9d6f5adfec0a13d9f468",
+      "grackle_timeout": 43200,
+      "trainer_timeout": 3600,
+      "runner_timeout": 30,
+      "penalty": 100000000
+    },
+    "z3_qfnra/z3_qfnra.fly": {
+      "md5": "2d9a271b6ac7498dc1304126e9c3b81e",
+      "grackle_timeout": 43200,
+      "trainer_timeout": 3600,
+      "runner_timeout": 30,
+      "penalty": 100000000
+    }
+  },
+  "outputs": {
+    "cvc5_qfbv": {
+      "db_md5": "0c0ee14331f3f634e6655295081a3f04",
+      "n_configs": 5
+    },
+    "cvc5_qflia": {
+      "db_md5": "7e5f9ae134a617dbe38165015bcb4ade",
+      "n_configs": 4
+    },
+    "cvc5_qfnra": {
+      "db_md5": "a655eb1d3c3818cd0433f5fb01086f2e",
+      "n_configs": 6
+    },
+    "z3_qfbv": {
+      "db_md5": "7e91da3be0caa1b4b8a8aee66d75b6f1",
+      "n_configs": 5
+    },
+    "z3_qflia": {
+      "db_md5": "860f52d0da65e0d8a8d4468afcbc9750",
+      "n_configs": 5
+    },
+    "z3_qfnra": {
+      "db_md5": "12f46ee131f78cb7f845158a55dd1315",
+      "n_configs": 6
+    }
+  }
+}

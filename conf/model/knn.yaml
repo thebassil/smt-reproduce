@@ -1,0 +1,5 @@
+_target_: pipeline.models.knn.KNNCard
+n_neighbors: 5
+metric: euclidean
+weights: uniform
+include_failures: true

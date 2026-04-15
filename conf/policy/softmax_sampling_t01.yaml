@@ -1,0 +1,4 @@
+_target_: pipeline.policies.softmax_sampling.SoftmaxSamplingPolicy
+decision_type: select
+temperature: 0.1
+seed: 42

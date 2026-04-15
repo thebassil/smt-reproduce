@@ -1,0 +1,2 @@
+_target_: pipeline.featurisers.graph_lig.LIGFeaturiser
+output_type: GRAPH

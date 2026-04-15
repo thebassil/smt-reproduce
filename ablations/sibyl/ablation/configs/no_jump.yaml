@@ -1,0 +1,17 @@
+# Ablation: Jumping knowledge toggle
+# Knob:    no_jump
+# Class:   algorithmic
+# Reference value: true (jumping enabled)
+
+experiment_code: ABL_NO_JUMP
+knob: no_jump
+description: >
+  Whether to use JumpingKnowledge connections. When enabled (true),
+  intermediate layer outputs are aggregated for the final
+  representation. When disabled, only the last layer output is used.
+  NOTE: The CLI flag --no-jump DISABLES jumping; the stored value
+  is the shouldJump boolean (true = jumping ON).
+
+values:
+  - true           # ← reference (jumping enabled)
+  - false

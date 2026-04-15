@@ -1,0 +1,16 @@
+# Ablation: Jumping knowledge mode
+# Knob:    mode
+# Class:   algorithmic
+# Reference value: cat
+
+experiment_code: ABL_MODE
+knob: mode
+description: >
+  How intermediate GNN layer representations are combined via
+  JumpingKnowledge. cat = concatenate all layers; max = element-wise
+  max; lstm = learnable LSTM aggregation.
+
+values:
+  - cat            # ← reference
+  - max
+  - lstm

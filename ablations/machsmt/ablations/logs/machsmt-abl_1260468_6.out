@@ -1,0 +1,22 @@
+SMT environment loaded from /dcs/large/u5573765
+=== Task 6: /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablations/templates/ml_core_sweep.yaml ===
+Experiment: ABL-ML01
+  Knob: ml_core
+  Values: ['scikit', 'xgboost', 'torch']
+  Reference ml_core=scikit
+  Suite: suite_9k, Portfolio: 7
+  Logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+  K-fold: 5
+======================================================================
+Experiment: ABL-ML01
+  Knob: ml_core
+  Values: ['scikit', 'xgboost', 'torch']
+  Logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+======================================================================
+Loaded 9000 benchmarks from suite_9k
+Filtered to 9000 benchmarks for logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+
+============================================================
+Variant 0: ml_core=scikit
+  k-fold=5
+============================================================

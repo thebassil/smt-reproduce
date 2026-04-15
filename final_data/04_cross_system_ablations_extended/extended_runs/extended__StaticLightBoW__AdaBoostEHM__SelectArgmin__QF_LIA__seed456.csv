@@ -1,0 +1,7 @@
+tier,ref,featuriser,model,policy,logic,seed,fold,par2,solved_pct,vbs_gap,train_time_s,predict_time_s,n_train,n_test,slurm_job,slurm_task
+extended,REF-VECTOR,StaticLightBoW,AdaBoostEHM,SelectArgmin,QF_LIA,456,0,8468.63,90.2,0.3911,104.3,26.5,2400.0,600.0,1301807,130
+extended,REF-VECTOR,StaticLightBoW,AdaBoostEHM,SelectArgmin,QF_LIA,456,1,8093.80,91.8,0.4190,102.6,28.1,2400.0,600.0,1301807,130
+extended,REF-VECTOR,StaticLightBoW,AdaBoostEHM,SelectArgmin,QF_LIA,456,2,7754.79,92.3,0.3639,109.6,27.4,2400.0,600.0,1301807,130
+extended,REF-VECTOR,StaticLightBoW,AdaBoostEHM,SelectArgmin,QF_LIA,456,3,5917.40,94.2,0.4729,112.8,24.6,2400.0,600.0,1301807,130
+extended,REF-VECTOR,StaticLightBoW,AdaBoostEHM,SelectArgmin,QF_LIA,456,4,9480.74,89.5,0.2837,109.6,27.9,2400.0,600.0,1301807,130
+extended,REF-VECTOR,StaticLightBoW,AdaBoostEHM,SelectArgmin,QF_LIA,456,MEAN,7943.07,91.6,-39.6905,673.4,,,,1301807,130

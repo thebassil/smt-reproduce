@@ -1,0 +1,7 @@
+defaults:
+  - static_expanded
+
+_target_: pipeline.featurisers.static_expanded.StaticExpanded
+output_type: VECTOR
+pca_only: true
+n_components: 35

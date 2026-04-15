@@ -1,0 +1,10 @@
+experiment: runner_penalty
+description: "Effect of penalty for unsolved instances on portfolio quality"
+knob: runner_penalty
+fly_key: trains.runner.penalty
+reference_value: 100000000
+values:
+  - 1000000
+  - 100000000
+  - 10000000000
+wall_time_override: null

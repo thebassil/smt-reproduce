@@ -1,0 +1,102 @@
+SMT environment loaded from /dcs/large/u5573765
+=== Task 8: /dcs/23/u5573765/cs351/smt-ablation-machsmt/ablations/templates/selector_swap.yaml ===
+Experiment: ABL-SEL01
+  Knob: pwc
+  Values: [False, True]
+  Reference pwc=False
+  Suite: suite_9k, Portfolio: 7
+  Logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+  K-fold: 5
+======================================================================
+Experiment: ABL-SEL01
+  Knob: pwc
+  Values: [False, True]
+  Logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+======================================================================
+Loaded 9000 benchmarks from suite_9k
+Filtered to 9000 benchmarks for logics: ['QF_BV', 'QF_LIA', 'QF_NRA']
+
+============================================================
+Variant 0: pwc=False
+  k-fold=5
+============================================================
+Parsing Input File |████████████████████████████████████████| 13788/13788 [100%] in 0.4s (33506.38/s) 
+on 739: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/disjunctiveScheduling.in1.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 742: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/disjunctiveScheduling.in7.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 743: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/disjunctiveScheduling.in9.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 802: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_17_17_02.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 803: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_17_17_07.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 804: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_17_17_09.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 805: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_18_18_04.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 806: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_18_18_11.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 807: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_18_18_13.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 808: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_18_18_14.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 809: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_19_19_14.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 810: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_19_19_17.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 811: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_19_19_19.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 812: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_20_20_04.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 816: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_21_21_16.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 817: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_21_21_18.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 818: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_22_22_09.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 819: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_22_22_08.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 820: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_22_22_11.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 844: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_22_22_13.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 879: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_22_22_19.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+Processing Benchmark Files |████████████████████████████████████████| 2298/2298 [100%] in 10:49.9 (3.54/s) 
+  Fold 0 QF_BV: avg_par2=22.522, solved=576/702 (82.1%)
+Parsing Input File |████████████████████████████████████████| 14550/14550 [100%] in 0.1s (159339.28/s) 
+Processing Benchmark Files |████████████████████████████████████████| 2425/2425 [100%] in 42.7s (56.85/s) 
+  Fold 0 QF_LIA: avg_par2=59.517, solved=340/575 (59.1%)
+Parsing Input File |████████████████████████████████████████| 12708/12708 [100%] in 0.4s (35053.91/s) 
+Processing Benchmark Files |████████████████████████████████████████| 2118/2118 [100%] in 2:08.1 (16.54/s) 
+  Fold 0 QF_NRA: avg_par2=1.061, solved=876/882 (99.3%)
+Parsing Input File |████████████████████████████████████████| 14700/14700 [100%] in 0.5s (30053.84/s) 
+on 227: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/20221012-MCMPC/dualexecution.t1.i15.fb1699bf.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 601: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/disjunctiveScheduling.in9.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 615: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/edge-matching-width=9-height=9-colours=11.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 657: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/knightTour.in07.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 658: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/knightTour.in08.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 659: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/knightTour.in09.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 664: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_18_18_11.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 667: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_18_18_14.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 669: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_19_19_19.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 670: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_21_21_05.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 671: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_20_20_04.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 672: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_21_21_01.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 673: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_21_21_12.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 674: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_21_21_16.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 675: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_21_21_18.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 676: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_22_22_08.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+Processing Benchmark Files |████████████████████████████████████████| 2450/2450 [100%] in 10:42.4 (3.81/s) 
+  Fold 1 QF_BV: avg_par2=64.056, solved=277/550 (50.4%)
+Parsing Input File |████████████████████████████████████████| 14754/14754 [100%] in 0.4s (36066.40/s) 
+Processing Benchmark Files |████████████████████████████████████████| 2459/2459 [100%] in 1:20.4 (30.57/s) 
+  Fold 1 QF_LIA: avg_par2=9.024, solved=511/541 (94.5%)
+Parsing Input File |████████████████████████████████████████| 14928/14928 [100%] in 0.4s (36624.78/s) 
+on 1149: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_NRA/LassoRanker/Collatz.bpl_Iteration1_Loop_3-pieceTemplate.smt2, len(self.solvers)=6, self.logic=QF_NRA)
+Processing Benchmark Files |████████████████████████████████████████| 2488/2488 [100%] in 1:57.0 (21.26/s) 
+  Fold 1 QF_NRA: avg_par2=14.357, solved=452/512 (88.3%)
+Parsing Input File |████████████████████████████████████████| 14664/14664 [100%] in 0.4s (36598.13/s) 
+on 605: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/channrlRoute.in6.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 683: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/knightTour.in08.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 684: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/knightTour.in09.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 685: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_17_17_02.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 686: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_17_17_07.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 687: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_17_17_09.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 688: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_18_18_04.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 689: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_18_18_11.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 690: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_18_18_13.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 694: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_19_19_19.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 697: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_21_21_01.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 698: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_21_21_05.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 701: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_22_22_08.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+on 702: [machsmt] warning: Timeout after 10 seconds of compute_core_features on Benchmark(self.path=data/benchmarks/suite_9k/QF_BV/asp/laby_22_22_09.lp.smt2, len(self.solvers)=6, self.logic=QF_BV)
+Processing Benchmark Files |████████████████████████████████████████| 2444/2444 [100%] in 10:10.3 (4.00/s) 
+  Fold 2 QF_BV: avg_par2=1.194, solved=555/556 (99.8%)
+Parsing Input File |████████████████████████████████████████| 14106/14106 [100%] in 0.4s (36658.85/s) 
+Processing Benchmark Files |████████████████████████████████████████| 2351/2351 [100%] in 1:21.6 (28.82/s) 
+  Fold 2 QF_LIA: avg_par2=6.837, solved=616/649 (94.9%)
+Parsing Input File |████████████████████████████████████████| 15120/15120 [100%] in 0.4s (37219.25/s) 
+Processing Benchmark Files |████████████████████████████████████████| 2520/2520 [100%] in 32.1s (78.53/s) 
+  Fold 2 QF_NRA: avg_par2=36.051, solved=381/480 (79.4%)
+Parsing Input File |████████████████████████████████████████| 14466/14466 [100%] in 0.4s (36826.12/s) 

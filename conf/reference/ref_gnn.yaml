@@ -1,0 +1,6 @@
+defaults:
+  - /featuriser: sibyl_ast_ud
+  - /model: gat_mlp
+  - /policy: select_argmin
+
+ref_code: REF-GNN

@@ -1,0 +1,5 @@
+_target_: pipeline.models.pwc.PWCCard
+classifier_type: adaboost
+aggregation: majority
+top_k_pairs: null
+use_calibrated_probs: false
